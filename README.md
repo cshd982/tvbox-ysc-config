@@ -12,7 +12,7 @@
 ## 一、源可用性状态
 
 <!-- STATUS_START -->
-> 🔄 最近更新：2026-09-29 14:02:29（北京时间） · 成功 **4/11** 个源
+> 🔄 最近更新：2026-09-29 14:14:54（北京时间） · 成功 **5/11** 个源
 
 | 配置源 | 状态 | 使用地址 |
 | --- | --- | --- |
@@ -20,10 +20,10 @@
 | 饭太硬 | ❌ 失败 | Expecting value: line 1 column 1 (char 0) |
 | 王二小 | ✅ 成功 | `https://d.kstore.dev/download/9280/wex.json` |
 | 讴歌 | 📦 缓存 | 上次成功配置（本次更新未抓到，沿用缓存） |
-| 摸鱼 | ❌ 失败 | HTTPConnectionPool(host='xn--c5wa.xn--v4q818bf34b.top', p... |
-| OK | ❌ 失败 | HTTPConnectionPool(host='ok321.top', port=80): Max retrie... |
+| 摸鱼 | ❌ 失败 | 401 Client Error:  for url: https://6800.kstore.vip/fish.... |
+| OK | ✅ 成功 | `http://home.jundie.top:81/top98.json` |
 | 小米 | ❌ 失败 | HTTPConnectionPool(host='miqk.cc', port=80): Max retries ... |
-| 巧记 | ❌ 失败 | HTTPConnectionPool(host='pandown.pro', port=80): Max retr... |
+| 巧记 | ❌ 失败 | 404 Client Error: Not Found for url: https://gitlab.com/d... |
 | 4K小盒子 | ✅ 成功 | `http://xhztv.top/4k.json` |
 | 潇洒 | ❌ 失败 | 404 Client Error:  for url: https://9877.kstore.space/Ano... |
 | 无邪多仓 | ✅ 成功 | `https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/js.json` |

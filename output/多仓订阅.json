@@ -9,6 +9,10 @@
       "url": "https://raw.githubusercontent.com/cshd982/tvbox-ysc-config/main/output/ouge.json"
     },
     {
+      "name": "OK",
+      "url": "https://raw.githubusercontent.com/cshd982/tvbox-ysc-config/main/output/ok.json"
+    },
+    {
       "name": "4K小盒子",
       "url": "https://raw.githubusercontent.com/cshd982/tvbox-ysc-config/main/output/4k.json"
     },

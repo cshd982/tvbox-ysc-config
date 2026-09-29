@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29 14:02:29",
+  "updated_at": "2026-09-29 14:14:54",
   "repo": "cshd982/tvbox-ysc-config",
   "sources": [
     {
@@ -36,14 +36,14 @@
       "name": "摸鱼",
       "ok": false,
       "used_url": null,
-      "error": "HTTPConnectionPool(host='xn--c5wa.xn--v4q818bf34b.top', port=80): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPConnection(host='xn--c5wa.xn--v4q818bf34b.top', port=80): Failed to resolve 'xn--c5wa.xn--v4q818bf34b.top' ([Errno -2] Name or service not known)\"))"
+      "error": "401 Client Error:  for url: https://6800.kstore.vip/fish.json"
     },
     {
       "id": "ok",
       "name": "OK",
-      "ok": false,
-      "used_url": null,
-      "error": "HTTPConnectionPool(host='ok321.top', port=80): Max retries exceeded with url: /tv (Caused by NameResolutionError(\"HTTPConnection(host='ok321.top', port=80): Failed to resolve 'ok321.top' ([Errno -5] No address associated with hostname)\"))"
+      "ok": true,
+      "used_url": "http://home.jundie.top:81/top98.json",
+      "error": null
     },
     {
       "id": "xiaomi",
@@ -57,7 +57,7 @@
       "name": "巧记",
       "ok": false,
       "used_url": null,
-      "error": "HTTPConnectionPool(host='pandown.pro', port=80): Max retries exceeded with url: /tvbox/tvbox.json (Caused by ConnectTimeoutError(<HTTPConnection(host='pandown.pro', port=80) at 0x7f18eec05110>, 'Connection to pandown.pro timed out. (connect timeout=20)'))"
+      "error": "404 Client Error: Not Found for url: https://gitlab.com/duomv/dzhipy/-/raw/main/index.json"
     },
     {
       "id": "4k",
