@@ -50,10 +50,17 @@
       "id": "moyu",
       "name": "摸鱼",
       "urls": [
-        "http://我不是.摸鱼儿.top",
+        "http://摸鱼儿.cc",
         "http://我不是.摸鱼儿.com",
         "http://我不是.摸鱼儿.xyz",
         "http://清清.摸鱼儿.top"
+      ]
+    },
+    {
+      "id": "shiguang",
+      "name": "时光",
+      "urls": [
+        "http://xmbjm.fh4u.org/dc.txt",
       ]
     },
     {
