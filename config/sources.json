@@ -17,7 +17,7 @@
       "id": "fantaiying",
       "name": "饭太硬",
       "urls": [
-        "http://www.饭太硬.art/tv",
+        "http://www.饭太硬.com/tv",
         "http://www.饭太硬.net/tv",
         "http://www.饭太硬.xyz/tv",
         "http://www.饭太硬.cc/tv",
@@ -70,14 +70,16 @@
       "urls": [
         "http://www.mpanso.com/小米/DEMO.json",
         "https://www.mpanso.com/%E5%B0%8F%E7%B1%B3/DEMO.json",
-        "http://miqk.cc/小米/DEMO.json"
+        "https://360zy.com/api.php/provide/vod"
       ]
     },
     {
       "id": "qiaoji",
       "name": "巧记",
       "urls": [
-        "https://gitlab.com/duomv/dzhipy/-/raw/main/index.json"
+        "http://宝盒接口.top",
+        "https://raw.githubusercontent.com/yoursmile66/TVBox/refs/heads/main/XC.json",
+        "https://raw.githubusercontent.com/west2008/tvbox-files/refs/heads/master/ok.json"
       ]
     },
     {
