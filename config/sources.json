@@ -6,10 +6,10 @@
       "id": "feimao",
       "name": "肥猫",
       "urls": [
-        "http://肥猫.com/",
+        "http://肥猫.live",
         "http://肥猫.com/tv",
-        "http://肥猫.net/tv",
-        "http://hello.肥猫.com/",
+        "http://肥猫.net",
+        "http://hello.肥猫.net/",
         "https://6296.kstore.vip/facat.json"
       ]
     },
@@ -51,17 +51,17 @@
       "name": "摸鱼",
       "urls": [
         "http://摸鱼儿.cc",
-        "http://我不是.摸鱼儿.com",
-        "http://我不是.摸鱼儿.xyz",
-        "http://清清.摸鱼儿.top"
+        "http://我不是.摸鱼儿.top",
+        "http://www.小不点.com",
+        "https://6800.kstore.vip/fish.json"
       ]
     },
     {
       "id": "ok",
       "name": "OK",
       "urls": [
-        "http://ok321.top/ok",
-        "http://ok321.top/tv"
+        "http://home.jundie.top:81/top98.json",
+        "https://ghfast.top/https://raw.githubusercontent.com/liu673cn/box/main/m.json"
       ]
     },
     {
@@ -77,7 +77,7 @@
       "id": "qiaoji",
       "name": "巧记",
       "urls": [
-        "http://pandown.pro/tvbox/tvbox.json"
+        "https://gitlab.com/duomv/dzhipy/-/raw/main/index.json"
       ]
     },
     {
