@@ -11,6 +11,10 @@
     {
       "name": "4K小盒子",
       "url": "https://raw.githubusercontent.com/cshd982/tvbox-ysc-config/main/output/4k.json"
+    },
+    {
+      "name": "无邪多仓",
+      "url": "https://raw.githubusercontent.com/cshd982/tvbox-ysc-config/main/output/wuxie.json"
     }
   ]
 }

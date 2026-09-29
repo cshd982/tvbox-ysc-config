@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29 13:32:31",
+  "updated_at": "2026-09-29 14:02:29",
   "repo": "cshd982/tvbox-ysc-config",
   "sources": [
     {
@@ -57,7 +57,7 @@
       "name": "巧记",
       "ok": false,
       "used_url": null,
-      "error": "HTTPConnectionPool(host='cdn.qiaoji8.com', port=80): Max retries exceeded with url: /tvbox.json (Caused by NameResolutionError(\"HTTPConnection(host='cdn.qiaoji8.com', port=80): Failed to resolve 'cdn.qiaoji8.com' ([Errno -2] Name or service not known)\"))"
+      "error": "HTTPConnectionPool(host='pandown.pro', port=80): Max retries exceeded with url: /tvbox/tvbox.json (Caused by ConnectTimeoutError(<HTTPConnection(host='pandown.pro', port=80) at 0x7f18eec05110>, 'Connection to pandown.pro timed out. (connect timeout=20)'))"
     },
     {
       "id": "4k",
@@ -76,9 +76,9 @@
     {
       "id": "wuxie",
       "name": "无邪多仓",
-      "ok": false,
-      "used_url": null,
-      "error": "返回内容不是 TVBox 配置（缺少 sites/spiders/lives 等字段）"
+      "ok": true,
+      "used_url": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/js.json",
+      "error": null
     }
   ]
 }
