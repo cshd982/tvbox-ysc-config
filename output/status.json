@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29 12:58:20",
+  "updated_at": "2026-09-29 13:32:31",
   "repo": "cshd982/tvbox-ysc-config",
   "sources": [
     {
@@ -72,6 +72,13 @@
       "ok": false,
       "used_url": null,
       "error": "404 Client Error:  for url: https://9877.kstore.space/AnotherD/api.json"
+    },
+    {
+      "id": "wuxie",
+      "name": "无邪多仓",
+      "ok": false,
+      "used_url": null,
+      "error": "返回内容不是 TVBox 配置（缺少 sites/spiders/lives 等字段）"
     }
   ]
 }
