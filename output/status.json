@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29 15:42:26",
+  "updated_at": "2026-09-29 16:00:42",
   "repo": "cshd982/tvbox-ysc-config",
   "sources": [
     {
@@ -46,17 +46,17 @@
       "error": null
     },
     {
-      "id": "xiaomi",
-      "name": "小米",
-      "ok": false,
-      "used_url": null,
-      "error": "返回内容不是 TVBox 配置（缺少 sites/spiders/lives 等字段）"
+      "id": "xyq",
+      "name": "香雅情",
+      "ok": true,
+      "used_url": "https://gh-proxy.org/https:/raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json",
+      "error": null
     },
     {
       "id": "qiaoji",
       "name": "巧记",
       "ok": true,
-      "used_url": "https://raw.githubusercontent.com/west2008/tvbox-files/refs/heads/master/ok.json",
+      "used_url": "http://宝盒接口.top",
       "error": null
     },
     {

@@ -12,7 +12,7 @@
 ## 一、源可用性状态
 
 <!-- STATUS_START -->
-> 🔄 最近更新：2026-09-29 15:42:26（北京时间） · 成功 **6/11** 个源
+> 🔄 最近更新：2026-09-29 16:00:42（北京时间） · 成功 **7/11** 个源
 
 | 配置源 | 状态 | 使用地址 |
 | --- | --- | --- |
@@ -22,8 +22,8 @@
 | 讴歌 | 📦 缓存 | 上次成功配置（本次更新未抓到，沿用缓存） |
 | 摸鱼 | ❌ 失败 | 401 Client Error:  for url: https://6800.kstore.vip/fish.... |
 | OK | ✅ 成功 | `http://home.jundie.top:81/top98.json` |
-| 小米 | ❌ 失败 | 返回内容不是 TVBox 配置（缺少 sites/spiders/lives 等字段） |
-| 巧记 | ✅ 成功 | `https://raw.githubusercontent.com/west2008/tvbox-files/refs/heads/master/ok.json` |
+| 香雅情 | ✅ 成功 | `https://gh-proxy.org/https:/raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json` |
+| 巧记 | ✅ 成功 | `http://宝盒接口.top` |
 | 4K小盒子 | ✅ 成功 | `http://xhztv.top/4k.json` |
 | 潇洒 | ❌ 失败 | 404 Client Error:  for url: https://9877.kstore.space/Ano... |
 | 无邪多仓 | ✅ 成功 | `https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/js.json` |
