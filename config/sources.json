@@ -95,8 +95,9 @@
         "https://9877.kstore.space/one.json",
         "https://9877.kstore.space/AnotherD/api.json"
       ]
-      {
-        "id": "wuxie",
+    },
+     {
+       "id": "wuxie",
       "name": "无邪多仓",
       "urls": ["https://gh-proxy.com/https://raw.githubusercontent.com/wxrjck/-YSC-/refs/heads/main/wx.json"
       ]
