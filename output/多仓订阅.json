@@ -1,10 +1,6 @@
 {
   "urls": [
     {
-      "name": "自己",
-      "url": "https://raw.githubusercontent.com/cshd982/tvbox-ysc-config/main/output/myconfig.json"
-    },
-    {
       "name": "王二小",
       "url": "https://raw.githubusercontent.com/cshd982/tvbox-ysc-config/main/output/wangerxiao.json"
     },
