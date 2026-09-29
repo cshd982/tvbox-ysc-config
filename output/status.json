@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29 14:14:54",
+  "updated_at": "2026-09-29 15:42:26",
   "repo": "cshd982/tvbox-ysc-config",
   "sources": [
     {
@@ -50,14 +50,14 @@
       "name": "小米",
       "ok": false,
       "used_url": null,
-      "error": "HTTPConnectionPool(host='miqk.cc', port=80): Max retries exceeded with url: /%E5%B0%8F%E7%B1%B3/DEMO.json (Caused by NameResolutionError(\"HTTPConnection(host='miqk.cc', port=80): Failed to resolve 'miqk.cc' ([Errno -5] No address associated with hostname)\"))"
+      "error": "返回内容不是 TVBox 配置（缺少 sites/spiders/lives 等字段）"
     },
     {
       "id": "qiaoji",
       "name": "巧记",
-      "ok": false,
-      "used_url": null,
-      "error": "404 Client Error: Not Found for url: https://gitlab.com/duomv/dzhipy/-/raw/main/index.json"
+      "ok": true,
+      "used_url": "https://raw.githubusercontent.com/west2008/tvbox-files/refs/heads/master/ok.json",
+      "error": null
     },
     {
       "id": "4k",
