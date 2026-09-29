@@ -65,12 +65,12 @@
       ]
     },
     {
-      "id": "xiaomi",
-      "name": "小米",
+      "id": "xyq",
+      "name": "香雅情",
       "urls": [
-        "http://www.mpanso.com/小米/DEMO.json",
-        "https://www.mpanso.com/%E5%B0%8F%E7%B1%B3/DEMO.json",
-        "https://360zy.com/api.php/provide/vod"
+        "https://gh-proxy.org/https:/raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json",
+        "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/js.json",
+        "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/XYQ.json"
       ]
     },
     {
