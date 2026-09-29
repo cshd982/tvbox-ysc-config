@@ -78,6 +78,7 @@
       "name": "巧记",
       "urls": [
         "http://cdn.qiaoji8.com/tvbox.json"
+        "http://pandown.pro/tvbox/tvbox.json"
       ]
     },
     {
@@ -99,7 +100,9 @@
      {
        "id": "wuxie",
       "name": "无邪多仓",
-      "urls": ["https://gh-proxy.com/https://raw.githubusercontent.com/wxrjck/-YSC-/refs/heads/main/wx.json"
+      "urls": [
+        "https://gh-proxy.com/https://raw.githubusercontent.com/wxrjck/-YSC-/refs/heads/main/wx.json"
+        "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/js.json"
       ]
     } 
   ]
