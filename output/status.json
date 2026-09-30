@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29 22:12:06",
+  "updated_at": "2026-09-30 09:32:42",
   "repo": "cshd982/tvbox-ysc-config",
   "sources": [
     {
@@ -7,14 +7,14 @@
       "name": "肥猫",
       "ok": false,
       "used_url": null,
-      "error": "401 Client Error:  for url: https://6296.kstore.vip/facat.json"
+      "error": "HTTPConnectionPool(host='xn--ihqu10cn4c.xn--z7x900a.love', port=63): Max retries exceeded with url: /%E6%8E%A5%E5%8F%A3%E7%A6%81%E6%AD%A2%E8%B4%A9%E5%8D%96 (Caused by NameResolutionError(\"HTTPConnection(host='xn--ihqu10cn4c.xn--z7x900a.love', port=63): Failed to resolve 'xn--ihqu10cn4c.xn--z7x900a.love' ([Errno -2] Name or service not known)\"))"
     },
     {
       "id": "fantaiying",
       "name": "饭太硬",
       "ok": false,
       "used_url": null,
-      "error": "Expecting value: line 1 column 1 (char 0)"
+      "error": "HTTPSConnectionPool(host='tvbox.cainisi.cf', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='tvbox.cainisi.cf', port=443): Failed to resolve 'tvbox.cainisi.cf' ([Errno -2] Name or service not known)\"))"
     },
     {
       "id": "wangerxiao",
@@ -39,8 +39,15 @@
       "error": "401 Client Error:  for url: https://6800.kstore.vip/fish.json"
     },
     {
-      "id": "ok",
-      "name": "OK",
+      "id": "Ray",
+      "name": "Ray",
+      "ok": false,
+      "used_url": null,
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "id": "junyu",
+      "name": "俊于",
       "ok": true,
       "used_url": "http://home.jundie.top:81/top98.json",
       "error": null
@@ -53,11 +60,26 @@
       "error": null
     },
     {
-      "id": "qiaoji",
-      "name": "巧记",
+      "id": "baohe",
+      "name": "宝盒",
       "ok": true,
       "used_url": "http://宝盒接口.top",
       "error": null
+    },
+    {
+      "id": "qiaoji",
+      "name": "巧计",
+      "ok": true,
+      "used_url": "(缓存)",
+      "error": "HTTPConnectionPool(host='pandown.pro', port=80): Max retries exceeded with url: /tvbox/tvbox.json (Caused by ConnectTimeoutError(<HTTPConnection(host='pandown.pro', port=80) at 0x7f1e77d91e90>, 'Connection to pandown.pro timed out. (connect timeout=20)'))",
+      "cached": true
+    },
+    {
+      "id": "yunxing",
+      "name": "云星日记",
+      "ok": false,
+      "used_url": null,
+      "error": "HTTPConnectionPool(host='itvbox.cc', port=80): Max retries exceeded with url: /tvbox/%E4%BA%91%E6%98%9F%E6%97%A5%E8%AE%B0/1.m3u8 (Caused by ConnectTimeoutError(<HTTPConnection(host='itvbox.cc', port=80) at 0x7f1e77bb3550>, 'Connection to itvbox.cc timed out. (connect timeout=20)'))"
     },
     {
       "id": "4k",
@@ -65,6 +87,13 @@
       "ok": true,
       "used_url": "http://xhztv.top/4k.json",
       "error": null
+    },
+    {
+      "id": "tang3",
+      "name": "唐三",
+      "ok": false,
+      "used_url": null,
+      "error": "HTTPConnectionPool(host='hz752.love', port=63): Max retries exceeded with url: /tk.json (Caused by NameResolutionError(\"HTTPConnection(host='hz752.love', port=63): Failed to resolve 'hz752.love' ([Errno -2] Name or service not known)\"))"
     },
     {
       "id": "xiaosa",

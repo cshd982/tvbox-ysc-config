@@ -12,19 +12,23 @@
 ## 一、源可用性状态
 
 <!-- STATUS_START -->
-> 🔄 最近更新：2026-09-29 22:12:06（北京时间） · 成功 **7/11** 个源
+> 🔄 最近更新：2026-09-30 09:32:42（北京时间） · 成功 **8/15** 个源
 
 | 配置源 | 状态 | 使用地址 |
 | --- | --- | --- |
-| 肥猫 | ❌ 失败 | 401 Client Error:  for url: https://6296.kstore.vip/facat... |
-| 饭太硬 | ❌ 失败 | Expecting value: line 1 column 1 (char 0) |
+| 肥猫 | ❌ 失败 | HTTPConnectionPool(host='xn--ihqu10cn4c.xn--z7x900a.love'... |
+| 饭太硬 | ❌ 失败 | HTTPSConnectionPool(host='tvbox.cainisi.cf', port=443): M... |
 | 王二小 | ✅ 成功 | `https://d.kstore.dev/download/9280/wex.json` |
 | 讴歌 | 📦 缓存 | 上次成功配置（本次更新未抓到，沿用缓存） |
 | 摸鱼 | ❌ 失败 | 401 Client Error:  for url: https://6800.kstore.vip/fish.... |
-| OK | ✅ 成功 | `http://home.jundie.top:81/top98.json` |
+| Ray | ❌ 失败 | Expecting value: line 1 column 1 (char 0) |
+| 俊于 | ✅ 成功 | `http://home.jundie.top:81/top98.json` |
 | 香雅情 | ✅ 成功 | `https://gh-proxy.org/https:/raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json` |
-| 巧记 | ✅ 成功 | `http://宝盒接口.top` |
+| 宝盒 | ✅ 成功 | `http://宝盒接口.top` |
+| 巧计 | 📦 缓存 | 上次成功配置（本次更新未抓到，沿用缓存） |
+| 云星日记 | ❌ 失败 | HTTPConnectionPool(host='itvbox.cc', port=80): Max retrie... |
 | 4K小盒子 | ✅ 成功 | `http://xhztv.top/4k.json` |
+| 唐三 | ❌ 失败 | HTTPConnectionPool(host='hz752.love', port=63): Max retri... |
 | 潇洒 | ❌ 失败 | 404 Client Error:  for url: https://9877.kstore.space/Ano... |
 | 无邪多仓 | ✅ 成功 | `https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/js.json` |
 <!-- STATUS_END -->
