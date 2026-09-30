@@ -10,7 +10,7 @@
         "http://肥猫.com/tv",
         "http://肥猫.net",
         "http://hello.肥猫.net/",
-        "https://6296.kstore.vip/facat.json"
+        "http://我不是.肥猫.love:63/接口禁止贩卖"
       ]
     },
     {
@@ -21,9 +21,9 @@
         "http://www.饭太硬.net/tv",
         "http://www.饭太硬.xyz/tv",
         "http://www.饭太硬.cc/tv",
-        "http://fty.xxooo.cf/tv",
-        "http://fty.888484.xyz/tv",
-        "http://fty.333232.xyz/tv"
+        "http://xhww.fun:63/小米/DEMO.json",
+        "http://drpy.site/js1",
+        "https://tvbox.cainisi.cf"
       ]
     },
     {
@@ -50,18 +50,26 @@
       "id": "moyu",
       "name": "摸鱼",
       "urls": [
-        "http://摸鱼儿.cc",
+        "https://kebedd69.github.io/TVbox-interface/py甜蜜.json",
         "http://我不是.摸鱼儿.top",
-        "http://www.小不点.com",
+        "https://神器每日推送.tk/pz.json",
         "https://6800.kstore.vip/fish.json"
       ]
     },
     {
-      "id": "ok",
-      "name": "OK",
+      "id": "Ray",
+      "name": "Ray",
+      "urls": [
+        "https://agit.ai/Yoursmile7/TVBox/raw/branch/master/XC.json",
+     "https://ghproxy.com/https://raw.githubusercontent.com/dxawi/0/main/0.json"
+      ]
+    },
+ {
+      "id": "junyu",
+      "name": "俊于",
       "urls": [
         "http://home.jundie.top:81/top98.json",
-        "https://ghfast.top/https://raw.githubusercontent.com/liu673cn/box/main/m.json"
+     "https://ghfast.top/https://raw.githubusercontent.com/liu673cn/box/main/m.json"
       ]
     },
     {
@@ -74,12 +82,26 @@
       ]
     },
     {
-      "id": "qiaoji",
-      "name": "巧记",
+      "id": "baohe",
+      "name": "宝盒",
       "urls": [
         "http://宝盒接口.top",
-        "https://raw.githubusercontent.com/yoursmile66/TVBox/refs/heads/main/XC.json",
+        "https://jihulab.com/ygbh1/box/-/raw/main/月光宝盒",
         "https://raw.githubusercontent.com/west2008/tvbox-files/refs/heads/master/ok.json"
+      ]
+    },
+  {
+      "id": "qiaoji",
+      "name": "巧计",
+      "urls": [
+        "http://pandown.pro/tvbox/tvbox.json"
+      ]
+    },
+{
+      "id": "yunxing",
+      "name": "云星日记",
+      "urls": [
+        "http://itvbox.cc/tvbox/云星日记/1.m3u8"
       ]
     },
     {
@@ -89,12 +111,21 @@
         "http://xhztv.top/4k.json",
         "http://xhztv.top/xhz"
       ]
+   },
+    {
+      "id": "tang3",
+      "name": "唐三",
+      "urls": [
+        "https://gh.t4tv.hz.cz/newtang.bmp",
+        "http://52bsj.vip:98/0805",
+         "http://hz752.love:63/tk.json"
+      ]
     },
     {
       "id": "xiaosa",
       "name": "潇洒",
       "urls": [
-        "https://9877.kstore.space/one.json",
+        "https://download.kstore.space/download/2863/01.txt",
         "https://9877.kstore.space/AnotherD/api.json"
       ]
     },
