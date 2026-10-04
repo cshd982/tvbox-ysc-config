@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-04 02:35:52",
+  "updated_at": "2026-10-04 12:12:11",
   "repo": "cshd982/tvbox-ysc-config",
   "sources": [
     {
@@ -71,7 +71,7 @@
       "name": "巧计",
       "ok": true,
       "used_url": "(缓存)",
-      "error": "HTTPConnectionPool(host='pandown.pro', port=80): Max retries exceeded with url: /tvbox/tvbox.json (Caused by ConnectTimeoutError(<HTTPConnection(host='pandown.pro', port=80) at 0x7f7fffcbee50>, 'Connection to pandown.pro timed out. (connect timeout=20)'))",
+      "error": "HTTPConnectionPool(host='pandown.pro', port=80): Max retries exceeded with url: /tvbox/tvbox.json (Caused by ConnectTimeoutError(<HTTPConnection(host='pandown.pro', port=80) at 0x7fc484895110>, 'Connection to pandown.pro timed out. (connect timeout=20)'))",
       "cached": true
     },
     {
@@ -79,7 +79,7 @@
       "name": "云星日记",
       "ok": false,
       "used_url": null,
-      "error": "HTTPConnectionPool(host='itvbox.cc', port=80): Max retries exceeded with url: /tvbox/%E4%BA%91%E6%98%9F%E6%97%A5%E8%AE%B0/1.m3u8 (Caused by ConnectTimeoutError(<HTTPConnection(host='itvbox.cc', port=80) at 0x7f7fffae45d0>, 'Connection to itvbox.cc timed out. (connect timeout=20)'))"
+      "error": "HTTPConnectionPool(host='itvbox.cc', port=80): Max retries exceeded with url: /tvbox/%E4%BA%91%E6%98%9F%E6%97%A5%E8%AE%B0/1.m3u8 (Caused by ConnectTimeoutError(<HTTPConnection(host='itvbox.cc', port=80) at 0x7fc484897910>, 'Connection to itvbox.cc timed out. (connect timeout=20)'))"
     },
     {
       "id": "4k",
