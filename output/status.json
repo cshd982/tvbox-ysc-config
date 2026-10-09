@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-09 10:13:06",
+  "updated_at": "2026-10-09 11:02:41",
   "repo": "cshd982/tvbox-ysc-config",
   "sources": [
     {
@@ -43,7 +43,7 @@
       "name": "时光",
       "ok": false,
       "used_url": null,
-      "error": "返回内容不是 TVBox 配置（缺少 sites/spiders/lives 等字段）"
+      "error": "401 Client Error:  for url: https://4708.kstore.space/svip/svip.json"
     },
     {
       "id": "junyu",
@@ -71,15 +71,15 @@
       "name": "巧计",
       "ok": true,
       "used_url": "(缓存)",
-      "error": "HTTPConnectionPool(host='pandown.pro', port=80): Max retries exceeded with url: /tvbox/tvbox.json (Caused by ConnectTimeoutError(<HTTPConnection(host='pandown.pro', port=80) at 0x7fb0c10b1590>, 'Connection to pandown.pro timed out. (connect timeout=20)'))",
+      "error": "HTTPConnectionPool(host='pandown.pro', port=80): Max retries exceeded with url: /tvbox/tvbox.json (Caused by ConnectTimeoutError(<HTTPConnection(host='pandown.pro', port=80) at 0x7f2ad2c95510>, 'Connection to pandown.pro timed out. (connect timeout=20)'))",
       "cached": true
     },
     {
       "id": "tinghao",
       "name": "挺好分享",
-      "ok": false,
-      "used_url": null,
-      "error": "返回内容不是 TVBox 配置（缺少 sites/spiders/lives 等字段）"
+      "ok": true,
+      "used_url": "https://ztha.top/TVBox/thdjk.json",
+      "error": null
     },
     {
       "id": "4k",
