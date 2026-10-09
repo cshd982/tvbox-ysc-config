@@ -12,23 +12,17 @@
 ## 一、源可用性状态
 
 <!-- STATUS_START -->
-> 🔄 最近更新：2026-10-09 11:02:41（北京时间） · 成功 **11/15** 个源
+> 🔄 最近更新：2026-10-09 11:41:03（北京时间） · 成功 **9/9** 个源
 
 | 配置源 | 状态 | 使用地址 |
 | --- | --- | --- |
-| 肥猫 | ❌ 失败 | HTTPConnectionPool(host='xn--ihqu10cn4c.xn--z7x900a.love'... |
-| 饭太硬 | ❌ 失败 | HTTPSConnectionPool(host='tvbox.cainisi.cf', port=443): M... |
-| 王二小 | ✅ 成功 | `https://d.kstore.dev/download/9280/wex.json` |
-| 讴歌 | 📦 缓存 | 上次成功配置（本次更新未抓到，沿用缓存） |
+| 王二小 | ✅ 成功 | `https://9280.kstore.vip/aiwex.json` |
 | 小马 | ✅ 成功 | `https://szyyds.cn/tv/x.json` |
-| 时光 | ❌ 失败 | 401 Client Error:  for url: https://4708.kstore.space/svi... |
 | 俊于 | ✅ 成功 | `http://home.jundie.top:81/top98.json` |
 | 香雅情 | ✅ 成功 | `https://gh-proxy.org/https:/raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json` |
-| 宝盒 | ✅ 成功 | `http://宝盒接口.top` |
-| 巧计 | 📦 缓存 | 上次成功配置（本次更新未抓到，沿用缓存） |
+| 宝盒 | ✅ 成功 | `https://raw.githubusercontent.com/west2008/tvbox-files/refs/heads/master/ok.json` |
 | 挺好分享 | ✅ 成功 | `https://ztha.top/TVBox/thdjk.json` |
 | 4K小盒子 | ✅ 成功 | `http://xhztv.top/4k.json` |
-| 嗷呜 | ❌ 失败 | HTTPConnectionPool(host='hz752.love', port=63): Max retri... |
 | 刘备 | ✅ 成功 | `https://raw.liucn.cc/box/m.json` |
 | 无邪多仓 | ✅ 成功 | `https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/js.json` |
 <!-- STATUS_END -->
