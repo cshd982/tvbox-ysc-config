@@ -1,62 +1,19 @@
 {
-    "description": "影视仓 / TVBox 配置源列表：聚合肥猫、饭太硬、王二小、讴歌（欧歌）、摸鱼、OK、小米、巧记、4K小盒子、潇洒等公开接口",
+    "description": "影视仓 / TVBox 配置源列表（已清洗：剔除失效源，保留经实测可用的地址；2026-10-09）",
     "update_interval_hours": 12,
     "sources": [
-        {
-            "id": "feimao",
-            "name": "肥猫",
-            "urls": [
-                "http://肥猫.live",
-                "http://肥猫.com/tv",
-                "http://肥猫.net",
-                "http://hello.肥猫.net/",
-                "http://我不是.肥猫.love:63/接口禁止贩卖"
-            ]
-        },
-        {
-            "id": "fantaiying",
-            "name": "饭太硬",
-            "urls": [
-                "http://xhww.fun:63/小米/DEMO.json",
-                "http://drpy.site/js1",
-                "https://tvbox.cainisi.cf"
-            ]
-        },
         {
             "id": "wangerxiao",
             "name": "王二小",
             "urls": [
-                "http://tvbox.王二小放牛娃.top",
-                "http://new.王二小放牛娃.top",
-                "https://d.kstore.dev/download/9280/wex.json",
                 "https://9280.kstore.vip/aiwex.json"
-            ]
-        },
-        {
-            "id": "ouge",
-            "name": "讴歌",
-            "urls": [
-                "http://tv.nxog.top/m/111.php?ou=公众号欧歌",
-                "https://欧歌.v.nxog.top/m/",
-                "http://欧歌zp8.v.nxog.top/m/",
-                "https://xn--zp8-mf3g9f.v.nxog.top/m/111.php?ou=%E5%85%AC%E4%BC%97%E5%8F%B7%E6%AC%A7%E6%AD%8Capp&mz=index&jar=index&123&b=%E6%AC%A7%E6%AD%8Czp8"
             ]
         },
         {
             "id": "xiaoma",
             "name": "小马",
             "urls": [
-                "https://szyyds.cn/tv/x.json",
-                "http://我不是.摸鱼儿.top",
-                "https://神器每日推送.tk/pz.json",
-                "https://6800.kstore.vip/fish.json"
-            ]
-        },
-        {
-            "id": "shiguang",
-            "name": "时光",
-            "urls": [
-                "https://4708.kstore.space/svip/svip.json"
+                "https://szyyds.cn/tv/x.json"
             ]
         },
         {
@@ -80,16 +37,7 @@
             "id": "baohe",
             "name": "宝盒",
             "urls": [
-                "http://宝盒接口.top",
-                "https://jihulab.com/ygbh1/box/-/raw/main/月光宝盒",
                 "https://raw.githubusercontent.com/west2008/tvbox-files/refs/heads/master/ok.json"
-            ]
-        },
-        {
-            "id": "qiaoji",
-            "name": "巧计",
-            "urls": [
-                "http://pandown.pro/tvbox/tvbox.json"
             ]
         },
         {
@@ -108,19 +56,9 @@
             ]
         },
         {
-            "id": "aowu",
-            "name": "嗷呜",
-            "urls": [
-                "",
-                "http://www.英格里希嗷呜.top/tv",
-                "http://hz752.love:63/tk.json"
-            ]
-        },
-        {
             "id": "liubei",
             "name": "刘备",
             "urls": [
-                "",
                 "https://raw.liucn.cc/box/m.json"
             ]
         },
