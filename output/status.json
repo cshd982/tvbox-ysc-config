@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08 22:15:59",
+  "updated_at": "2026-10-09 10:13:06",
   "repo": "cshd982/tvbox-ysc-config",
   "sources": [
     {
@@ -32,18 +32,18 @@
       "cached": true
     },
     {
-      "id": "moyu",
-      "name": "摸鱼",
-      "ok": false,
-      "used_url": null,
-      "error": "401 Client Error:  for url: https://6800.kstore.vip/fish.json"
+      "id": "xiaoma",
+      "name": "小马",
+      "ok": true,
+      "used_url": "https://szyyds.cn/tv/x.json",
+      "error": null
     },
     {
-      "id": "Ray",
-      "name": "Ray",
+      "id": "shiguang",
+      "name": "时光",
       "ok": false,
       "used_url": null,
-      "error": "Expecting value: line 1 column 1 (char 0)"
+      "error": "返回内容不是 TVBox 配置（缺少 sites/spiders/lives 等字段）"
     },
     {
       "id": "junyu",
@@ -71,15 +71,15 @@
       "name": "巧计",
       "ok": true,
       "used_url": "(缓存)",
-      "error": "HTTPConnectionPool(host='pandown.pro', port=80): Max retries exceeded with url: /tvbox/tvbox.json (Caused by ConnectTimeoutError(<HTTPConnection(host='pandown.pro', port=80) at 0x7f3ac24f0390>, 'Connection to pandown.pro timed out. (connect timeout=20)'))",
+      "error": "HTTPConnectionPool(host='pandown.pro', port=80): Max retries exceeded with url: /tvbox/tvbox.json (Caused by ConnectTimeoutError(<HTTPConnection(host='pandown.pro', port=80) at 0x7fb0c10b1590>, 'Connection to pandown.pro timed out. (connect timeout=20)'))",
       "cached": true
     },
     {
-      "id": "yunxing",
-      "name": "云星日记",
+      "id": "tinghao",
+      "name": "挺好分享",
       "ok": false,
       "used_url": null,
-      "error": "HTTPConnectionPool(host='itvbox.cc', port=80): Max retries exceeded with url: /tvbox/%E4%BA%91%E6%98%9F%E6%97%A5%E8%AE%B0/1.m3u8 (Caused by ConnectTimeoutError(<HTTPConnection(host='itvbox.cc', port=80) at 0x7f3ac25000d0>, 'Connection to itvbox.cc timed out. (connect timeout=20)'))"
+      "error": "返回内容不是 TVBox 配置（缺少 sites/spiders/lives 等字段）"
     },
     {
       "id": "4k",
@@ -89,18 +89,18 @@
       "error": null
     },
     {
-      "id": "tang3",
-      "name": "唐三",
+      "id": "aowu",
+      "name": "嗷呜",
       "ok": false,
       "used_url": null,
       "error": "HTTPConnectionPool(host='hz752.love', port=63): Max retries exceeded with url: /tk.json (Caused by NameResolutionError(\"HTTPConnection(host='hz752.love', port=63): Failed to resolve 'hz752.love' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "id": "xiaosa",
-      "name": "潇洒",
-      "ok": false,
-      "used_url": null,
-      "error": "404 Client Error:  for url: https://9877.kstore.space/AnotherD/api.json"
+      "id": "liubei",
+      "name": "刘备",
+      "ok": true,
+      "used_url": "https://raw.liucn.cc/box/m.json",
+      "error": null
     },
     {
       "id": "wuxie",

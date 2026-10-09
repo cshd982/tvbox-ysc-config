@@ -9,6 +9,10 @@
       "url": "https://raw.githubusercontent.com/cshd982/tvbox-ysc-config/main/output/ouge.json"
     },
     {
+      "name": "小马",
+      "url": "https://raw.githubusercontent.com/cshd982/tvbox-ysc-config/main/output/xiaoma.json"
+    },
+    {
       "name": "俊于",
       "url": "https://raw.githubusercontent.com/cshd982/tvbox-ysc-config/main/output/junyu.json"
     },
@@ -27,6 +31,10 @@
     {
       "name": "4K小盒子",
       "url": "https://raw.githubusercontent.com/cshd982/tvbox-ysc-config/main/output/4k.json"
+    },
+    {
+      "name": "刘备",
+      "url": "https://raw.githubusercontent.com/cshd982/tvbox-ysc-config/main/output/liubei.json"
     },
     {
       "name": "无邪多仓",
