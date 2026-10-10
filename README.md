@@ -12,19 +12,25 @@
 ## 一、源可用性状态
 
 <!-- STATUS_START -->
-> 🔄 最近更新：2026-10-10 10:07:19（北京时间） · 成功 **9/9** 个源
+> 🔄 最近更新：2026-10-10 13:44:01（北京时间） · 成功 **7/15** 个源
 
 | 配置源 | 状态 | 使用地址 |
 | --- | --- | --- |
-| 王二小 | ✅ 成功 | `https://9280.kstore.vip/aiwex.json` |
-| 小马 | ✅ 成功 | `https://szyyds.cn/tv/x.json` |
-| 俊于 | ✅ 成功 | `http://home.jundie.top:81/top98.json` |
-| 香雅情 | ✅ 成功 | `https://gh-proxy.org/https:/raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json` |
-| 宝盒 | ✅ 成功 | `https://raw.githubusercontent.com/west2008/tvbox-files/refs/heads/master/ok.json` |
-| 挺好分享 | ✅ 成功 | `https://ztha.top/TVBox/thdjk.json` |
+| 肥猫 | ❌ 失败 | 401 Client Error:  for url: https://6296.kstore.vip/facat... |
+| 饭太硬 | ❌ 失败 | Expecting value: line 1 column 1 (char 0) |
+| 王二小 | ✅ 成功 | `https://d.kstore.dev/download/9280/wex.json` |
+| 讴歌 | 📦 缓存 | 上次成功配置（本次更新未抓到，沿用缓存） |
+| 摸鱼 | ❌ 失败 | HTTPConnectionPool(host='xn--c5wa.xn--v4q818bf34b.top', p... |
+| OK | 📦 缓存 | 上次成功配置（本次更新未抓到，沿用缓存） |
+| 小米 | ❌ 失败 | HTTPConnectionPool(host='miqk.cc', port=80): Max retries ... |
+| 巧记 | 📦 缓存 | 上次成功配置（本次更新未抓到，沿用缓存） |
 | 4K小盒子 | ✅ 成功 | `http://xhztv.top/4k.json` |
-| 刘备 | ✅ 成功 | `https://raw.liucn.cc/box/m.json` |
-| 无邪多仓 | ✅ 成功 | `https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/js.json` |
+| 潇洒 | ❌ 失败 | 404 Client Error:  for url: https://9877.kstore.space/Ano... |
+| 俊于(俊佬) | ✅ 成功 | `http://home.jundie.top:81/top98.json` |
+| 月光宝盒 | ❌ 失败 | 返回内容不是 TVBox 配置（缺少 sites/spiders/lives 等字段） |
+| 肥猫(新) | ❌ 失败 | Expecting property name enclosed in double quotes: line 1... |
+| 老刘备 | ✅ 成功 | `https://ghfast.top/https://raw.githubusercontent.com/liu673cn/box/main/m.json` |
+| 短剧专线 | ❌ 失败 | HTTPConnectionPool(host='box.ufuzi.com', port=80): Max re... |
 <!-- STATUS_END -->
 
 ## 二、仓库结构

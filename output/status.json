@@ -1,48 +1,65 @@
 {
-  "updated_at": "2026-10-10 10:07:19",
+  "updated_at": "2026-10-10 13:44:01",
   "repo": "cshd982/tvbox-ysc-config",
   "sources": [
+    {
+      "id": "feimao",
+      "name": "肥猫",
+      "ok": false,
+      "used_url": null,
+      "error": "401 Client Error:  for url: https://6296.kstore.vip/facat.json"
+    },
+    {
+      "id": "fantaiying",
+      "name": "饭太硬",
+      "ok": false,
+      "used_url": null,
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    },
     {
       "id": "wangerxiao",
       "name": "王二小",
       "ok": true,
-      "used_url": "https://9280.kstore.vip/aiwex.json",
+      "used_url": "https://d.kstore.dev/download/9280/wex.json",
       "error": null
     },
     {
-      "id": "xiaoma",
-      "name": "小马",
+      "id": "ouge",
+      "name": "讴歌",
       "ok": true,
-      "used_url": "https://szyyds.cn/tv/x.json",
-      "error": null
+      "used_url": "(缓存)",
+      "error": "HTTPSConnectionPool(host='xn--zp8-mf3g9f.v.nxog.top', port=443): Max retries exceeded with url: /m/111.php?ou=%E5%85%AC%E4%BC%97%E5%8F%B7%E6%AC%A7%E6%AD%8Capp&mz=index&jar=index&123&b=%E6%AC%A7%E6%AD%8Czp8 (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1016)')))",
+      "cached": true
     },
     {
-      "id": "junyu",
-      "name": "俊于",
-      "ok": true,
-      "used_url": "http://home.jundie.top:81/top98.json",
-      "error": null
+      "id": "moyu",
+      "name": "摸鱼",
+      "ok": false,
+      "used_url": null,
+      "error": "HTTPConnectionPool(host='xn--c5wa.xn--v4q818bf34b.top', port=80): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPConnection(host='xn--c5wa.xn--v4q818bf34b.top', port=80): Failed to resolve 'xn--c5wa.xn--v4q818bf34b.top' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "id": "xyq",
-      "name": "香雅情",
+      "id": "ok",
+      "name": "OK",
       "ok": true,
-      "used_url": "https://gh-proxy.org/https:/raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json",
-      "error": null
+      "used_url": "(缓存)",
+      "error": "HTTPConnectionPool(host='ok321.top', port=80): Max retries exceeded with url: /tv (Caused by NameResolutionError(\"HTTPConnection(host='ok321.top', port=80): Failed to resolve 'ok321.top' ([Errno -5] No address associated with hostname)\"))",
+      "cached": true
     },
     {
-      "id": "baohe",
-      "name": "宝盒",
-      "ok": true,
-      "used_url": "https://raw.githubusercontent.com/west2008/tvbox-files/refs/heads/master/ok.json",
-      "error": null
+      "id": "xiaomi",
+      "name": "小米",
+      "ok": false,
+      "used_url": null,
+      "error": "HTTPConnectionPool(host='miqk.cc', port=80): Max retries exceeded with url: /%E5%B0%8F%E7%B1%B3/DEMO.json (Caused by NameResolutionError(\"HTTPConnection(host='miqk.cc', port=80): Failed to resolve 'miqk.cc' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
-      "id": "tinghao",
-      "name": "挺好分享",
+      "id": "qiaoji",
+      "name": "巧记",
       "ok": true,
-      "used_url": "https://ztha.top/TVBox/thdjk.json",
-      "error": null
+      "used_url": "(缓存)",
+      "error": "HTTPConnectionPool(host='cdn.qiaoji8.com', port=80): Max retries exceeded with url: /tvbox.json (Caused by NameResolutionError(\"HTTPConnection(host='cdn.qiaoji8.com', port=80): Failed to resolve 'cdn.qiaoji8.com' ([Errno -2] Name or service not known)\"))",
+      "cached": true
     },
     {
       "id": "4k",
@@ -52,18 +69,46 @@
       "error": null
     },
     {
-      "id": "liubei",
-      "name": "刘备",
+      "id": "xiaosa",
+      "name": "潇洒",
+      "ok": false,
+      "used_url": null,
+      "error": "404 Client Error:  for url: https://9877.kstore.space/AnotherD/api.json"
+    },
+    {
+      "id": "junyu",
+      "name": "俊于(俊佬)",
       "ok": true,
-      "used_url": "https://raw.liucn.cc/box/m.json",
+      "used_url": "http://home.jundie.top:81/top98.json",
       "error": null
     },
     {
-      "id": "wuxie",
-      "name": "无邪多仓",
+      "id": "yueguangbaoxian",
+      "name": "月光宝盒",
+      "ok": false,
+      "used_url": null,
+      "error": "返回内容不是 TVBox 配置（缺少 sites/spiders/lives 等字段）"
+    },
+    {
+      "id": "feimao2",
+      "name": "肥猫(新)",
+      "ok": false,
+      "used_url": null,
+      "error": "Expecting property name enclosed in double quotes: line 124 column 1 (char 2979)"
+    },
+    {
+      "id": "laoliubei",
+      "name": "老刘备",
       "ok": true,
-      "used_url": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/js.json",
+      "used_url": "https://ghfast.top/https://raw.githubusercontent.com/liu673cn/box/main/m.json",
       "error": null
+    },
+    {
+      "id": "duanju",
+      "name": "短剧专线",
+      "ok": false,
+      "used_url": null,
+      "error": "HTTPConnectionPool(host='box.ufuzi.com', port=80): Max retries exceeded with url: /tv/qq/%E7%9F%AD%E5%89%A7%E9%A2%91%E9%81%93/api.json (Caused by ConnectTimeoutError(<HTTPConnection(host='box.ufuzi.com', port=80) at 0x7fe2bd846a50>, 'Connection to box.ufuzi.com timed out. (connect timeout=20)'))"
     }
   ]
 }
