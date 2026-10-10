@@ -142,7 +142,7 @@
       "id": "tvbox_clean",
       "name": "自选71站",
       "urls": [
-        "https://raw.githubusercontent.com/cshd982/tvbox-ysc-config/main/config/tvbox_config_clean.json"
+        "https://raw.githubusercontent.com/cshd982/tvbox-ysc-config/main/config/tvbox_config.json"
       ]
     }
   ]
