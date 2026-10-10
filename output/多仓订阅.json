@@ -27,6 +27,10 @@
     {
       "name": "老刘备",
       "url": "https://raw.githubusercontent.com/cshd982/tvbox-ysc-config/main/output/laoliubei.json"
+    },
+    {
+      "name": "自选71站",
+      "url": "https://raw.githubusercontent.com/cshd982/tvbox-ysc-config/main/output/tvbox_clean.json"
     }
   ]
 }

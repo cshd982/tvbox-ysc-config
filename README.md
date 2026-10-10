@@ -12,7 +12,7 @@
 ## 一、源可用性状态
 
 <!-- STATUS_START -->
-> 🔄 最近更新：2026-10-10 17:01:30（北京时间） · 成功 **7/16** 个源
+> 🔄 最近更新：2026-10-10 17:19:50（北京时间） · 成功 **8/16** 个源
 
 | 配置源 | 状态 | 使用地址 |
 | --- | --- | --- |
@@ -31,7 +31,7 @@
 | 肥猫(新) | ❌ 失败 | Expecting property name enclosed in double quotes: line 1... |
 | 老刘备 | ✅ 成功 | `https://ghfast.top/https://raw.githubusercontent.com/liu673cn/box/main/m.json` |
 | 短剧专线 | ❌ 失败 | HTTPConnectionPool(host='box.ufuzi.com', port=80): Max re... |
-| 自选71站 | ❌ 失败 | 404 Client Error: Not Found for url: https://raw.githubus... |
+| 自选71站 | ✅ 成功 | `https://raw.githubusercontent.com/cshd982/tvbox-ysc-config/main/config/tvbox_config.json` |
 <!-- STATUS_END -->
 
 ## 二、仓库结构
