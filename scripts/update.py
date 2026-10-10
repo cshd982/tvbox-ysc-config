@@ -23,6 +23,8 @@ import os
 import sys
 import time
 import urllib.parse
+import re
+
 
 import requests
 
@@ -264,6 +266,27 @@ def write_badge(ok_count, total):
     with open(os.path.join(OUTPUT_DIR, "shield.json"), "w", encoding="utf-8") as f:
         json.dump(badge, f, ensure_ascii=False, indent=2)
 
+def reorder_sites(sites, now_str):
+    """聚合后重排站点：置顶更新时间，影视在前、4K（需扫码）在后、配置/公告/工具最后。"""
+    def bucket(s):
+        name = s.get("name", "") or ""
+        if "4K" in name:
+            return 2
+        if re.search(r"配置|公告|推送|中心|接口|停更|Notice|Config|扫码|网盘|专用|通用|豆瓣|Douban|免责|提示", name):
+            return 3
+        return 1
+    notice = {"key": "notice_update", "name": f"🕐更新时间：{now_str}（北京时间）", "type": 3, "api": "csp_Notice", "searchable": 0}
+    vod, fourk, tool = [], [], []
+    for s in sites:
+        b = bucket(s)
+        if b == 1: vod.append(s)
+        elif b == 2: fourk.append(s)
+        else: tool.append(s)
+    return [notice] + vod + fourk + tool
+
+
+
+
 
 def main() -> int:
     with open(CONFIG_FILE, "r", encoding="utf-8") as f:
@@ -356,7 +379,11 @@ def main() -> int:
     # 生成聚合单仓文件（把所有成功源的 sites/lives/parses 合并成一个单仓）
     merged = merge_configs(fetched)
     merged_path = os.path.join(OUTPUT_DIR, "单仓聚合.json")
-    if merged is not None:
+        if merged is not None:
+        merged["sites"] = reorder_sites(
+            merged.get("sites", []),
+            datetime.datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S"),
+        )
         with open(merged_path, "w", encoding="utf-8") as f:
             json.dump(merged, f, ensure_ascii=False, indent=2)
         print(f"聚合单仓：{merged_path}（共 {len(merged.get('sites', []))} 个站点）")
