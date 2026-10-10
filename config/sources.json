@@ -137,6 +137,12 @@
         "http://box.ufuzi.com/tv/qq/%E7%9F%AD%E5%89%A7%E9%A2%91%E9%81%93/api.json"
       ],
       "note": "实测可用：返回合法TVBox配置(含spider/sites)"
-    }
-  ]
+    },
+    {
+      "id": "tvbox_clean",
+      "name": "自选71站",
+      "urls": [
+         "https://raw.githubusercontent.com/cshd982/tvbox-ysc-config/main/config/tvbox_config_clean.json"
+    ]
 }
+
