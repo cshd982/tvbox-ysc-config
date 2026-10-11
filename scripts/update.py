@@ -38,6 +38,10 @@ URL_INTERVAL = 1.5  # 每个地址之间的小间隔秒数（降低被限流概�
 SOURCE_INTERVAL = 3  # 每个源之间的间隔秒数（降低被限流概率）
 # 判定"像 TVBox 单仓配置"的顶层字段
 TVBOX_KEYS = ("sites", "spiders", "lives", "store", "exts", "parses", "flags")
+# GitHub raw 镜像前缀：用于多仓订阅里指向本仓库 output/ 的链接，方便国内 App 拉取。
+# 若 ghfast.top 在你的网络里不可用，可整体换成其他镜像，例如：
+#   "https://gh-proxy.org/"  /  "https://ghproxy.net/"  /  ""（留空=不加镜像，直连 raw）
+RAW_MIRROR = "https://ghfast.top/"
 def _strip_js_comments(text: str) -> str:
     """剔除 JSON 中内嵌的 // 行注释（部分接口会在字段后追加免责注释）。"""
     lines = text.split("\n")
@@ -261,7 +265,8 @@ def main() -> int:
         or os.environ.get("REPO")
         or DEFAULT_REPO
     )
-    raw_base = f"https://raw.githubusercontent.com/{repo}/main/output"
+    # 多仓订阅里指向本仓库 output/ 的 raw 链接，统一套镜像前缀，方便国内 App 拉取
+    raw_base = f"{RAW_MIRROR}https://raw.githubusercontent.com/{repo}/main/output"
     status = {"updated_at": now_str, "repo": repo, "sources": []}
     subscriptions = []
     fetched = []  # [(sid, name, data_dict), ...] 用于聚合单仓
