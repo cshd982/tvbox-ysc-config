@@ -325,6 +325,25 @@ def main() -> int:
         status["sources"].append(entry)
         # 源之间稍作间隔，避免集中请求被限流
         time.sleep(SOURCE_INTERVAL)
+    # 追加固定条目（不经过 sources.json 抓取，随多仓订阅自动生成）
+    #   cshd固定 = 本仓库 71 源静态配置 output/tvbox_clean.json（走镜像，与其它条目一致）
+    #   cshd自动 = 另一仓库 tvbox-api-backup 自动生成的海量聚合接口（直连，不加镜像）
+    extra_subs = [
+        {"name": "cshd固定", "url": f"{raw_base}/tvbox_clean.json"},
+        {"name": "cshd自动", "url": "https://raw.githubusercontent.com/cshd982/tvbox-api-backup/main/tvbox/%E6%B5%B7%E9%87%8F%E9%87%87%E9%9B%86%E8%81%9A%E5%90%88%E6%8E%A5%E5%8F%A3.json"},
+    ]
+    seen_urls = {s.get("url") for s in subscriptions}
+    for es in extra_subs:
+        if es["url"] in seen_urls:
+            # 地址已存在（如 sources 中的 tvbox_clean 源已生成同名地址）：
+            # 仅将其名字更新为固定条目名字（自选71站 -> cshd固定）
+            for s in subscriptions:
+                if s.get("url") == es["url"]:
+                    s["name"] = es["name"]
+                    break
+        else:
+            subscriptions.append(es)
+            seen_urls.add(es["url"])
     # 生成多仓订阅文件（影视仓"订阅/多仓"格式）
     sub_path = os.path.join(OUTPUT_DIR, "多仓订阅.json")
     with open(sub_path, "w", encoding="utf-8") as f:
