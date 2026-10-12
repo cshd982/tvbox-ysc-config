@@ -10,11 +10,11 @@
       }
     }
   ],
-  "warningText": "本配置由 5 个公开源自动聚合（含王二小等），仅供学习交流，请勿商用",
+  "warningText": "本配置由 6 个公开源自动聚合（含王二小等），仅供学习交流，请勿商用",
   "sites": [
     {
       "key": "notice_update",
-      "name": "🕐更新时间：2026-10-12 10:10:45（北京时间）",
+      "name": "🕐更新时间：2026-10-12 22:17:06（北京时间）",
       "type": 3,
       "api": "csp_Notice",
       "searchable": 0
@@ -1653,6 +1653,436 @@
       "filterable": 1
     },
     {
+      "key": "è±ç£",
+      "name": "ð¼âQQé¢éï¼è¥ç«å®è´â",
+      "type": 3,
+      "api": "csp_Douban",
+      "searchable": 0
+    },
+    {
+      "key": "è±ç£é¢å",
+      "name": "ð¼âè±ç£âé¢å",
+      "type": 3,
+      "api": "csp_YGP",
+      "playerType": 2,
+      "searchable": 0
+    },
+    {
+      "key": "config",
+      "name": "ð¼âéç½®âä¸­å¿",
+      "type": 3,
+      "api": "csp_Config",
+      "playerType": 2
+    },
+    {
+      "key": "csp_FeiMaoUC",
+      "name": "â¡âéªçµâä¼æ±",
+      "type": 3,
+      "api": "csp_Duopan",
+      "filterable": 1,
+      "ext": {
+        "site_urls": [
+          "http://shandian.blog/",
+          "http://sd.sduc.site/"
+        ],
+        "threadinfo": {
+          "chunksize": 512,
+          "threads": 16
+        },
+        "url_key": "FeiMaoUC"
+      }
+    },
+    {
+      "key": "csp_Duopan",
+      "name": "ðï¸âè¡ç¬âå½±è§",
+      "type": 3,
+      "api": "csp_Duopan",
+      "filterable": 1,
+      "ext": {
+        "site_urls": [
+          "http://xiaocge.fun",
+          "http://feimo.fun",
+          "http://www.labi88.sbs",
+          "http://fmao.site",
+          "http://fmao.shop",
+          "http://xiaocgege.shop",
+          "http://www.xiaocgege.shop"
+        ],
+        "threadinfo": {
+          "chunksize": 512,
+          "threads": 16
+        },
+        "url_key": "Duopan2"
+      }
+    },
+    {
+      "key": "csp_Netfixtv",
+      "name": "ðâï¸è³è»âå½±è§",
+      "type": 3,
+      "api": "csp_Duopan",
+      "filterable": 1,
+      "ext": {
+        "site_urls": [
+          "https://pan.mihdr.top",
+          "https://www.zhizhen1.top",
+          "https://www.mihdr.top",
+          "https://www.miqk.cc",
+          "https://www.zhizhenpan.com",
+          "https://www.zhizhen8.click"
+        ],
+        "url_key": "Netfixtv2",
+        "threadinfo": {
+          "chunksize": 512,
+          "threads": 16
+        }
+      }
+    },
+    {
+      "key": "æ½®æµ",
+      "name": "ðâæ½®æµâAPP",
+      "type": 3,
+      "api": "csp_AppRJ",
+      "ext": "http://v.rbotv.cn"
+    },
+    {
+      "key": "è¥ç«",
+      "name": "ð¼âè¥ç«âAPP",
+      "type": 3,
+      "api": "csp_AppGet",
+      "ext": "https://appcms.4ksj.app|O3K6rYx75Q4xtiIE"
+    },
+    {
+      "key": "å¹²é¥­",
+      "name": "ðâå¹²é¥­âAPP",
+      "type": 3,
+      "api": "csp_AppGet",
+      "ext": "https://www.douy32mf.top|1234567887654321"
+    },
+    {
+      "key": "åç",
+      "name": "ðâåçâAPP",
+      "type": 3,
+      "api": "csp_AppQi",
+      "ext": "http://103.217.190.91:5566|hagYExMdMkeWfemK"
+    },
+    {
+      "key": "è¡å¨",
+      "name": "ðâè¡å¨âAPP",
+      "type": 3,
+      "api": "csp_AppDrama",
+      "ext": {
+        "host": "",
+        "publicKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCp9Ek4wIlQAtwFnuBRlsFiow2tr+4UOciGeNKbY7nL74etUqUb6fvpOSOHhFEfaWlfwUpOB17x3JEL3No19nfjCeVYrYPjlJcgoqUWH/tfIfFAQWvtxBIBlKazkhw8d3ChysWmeWRikKqkBsVRY4oqNPuj4sjm6Zult0U4I4prRQIDAQAB",
+        "dataKey": "NDBYSZR1DMRRZ05NSUCWEJNIYWLBPT0=",
+        "dataIv": "OC1A06E197EF10CF3F6058CA7A803B5E",
+        "commonKey": "ed5fdsgucxumegqa",
+        "version": " 1.0.0.4 ",
+        "pkg": "com.muyue.tool",
+        "appName": "åè°",
+        "site": " https://1851089669.cdn.123clouddisk.com/1851089669/oss/az5.txt ",
+        "decrypt": "1"
+      }
+    },
+    {
+      "key": "åæ¥",
+      "name": "âï¸âåæ¥âAPP",
+      "type": 3,
+      "api": "csp_AppDrama",
+      "ext": {
+        "host": "",
+        "publicKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCduNEnfxGaLuQRk5ABzXHhPV43zi00sCHjLo8BYc+Wi6xXm2b4v0i28Sq4WlNCKhseft9fz8kO/qLr6/022o1RcuOU7e4GFL3U9WnNODwRBYSYWd+K8nqpI/tAUDmZEBGRWqjrc7x6aMl3A+xpnWkLbPCLsuhbuuUE3tv09oeOpwIDAQAB",
+        "dataKey": "D2KREWRIBVNAUJJYEDL4VFHOY2Q0PQ==",
+        "dataIv": "OC1A06E197EF10CF3F6058CA7A803B5E",
+        "commonKey": "ed5fdsgucxumegqa",
+        "version": " 3.0.0.7 ",
+        "pkg": "com.dytiantang.one",
+        "appName": "çµå½±å¤©å ",
+        "site": "https://dyttandroid04-1372779881.cos.ap-shanghai.myqcloud.com/app_dyttandroid.txt",
+        "decrypt": "1"
+      }
+    },
+    {
+      "key": "ä¸ç¢",
+      "name": "ð¥£âä¸ç¢âAPP",
+      "type": 3,
+      "api": "csp_AppGet",
+      "ext": "https://app.95112475.xyz|5a9w6x58dsq6z3a6"
+    },
+    {
+      "key": "é©å",
+      "name": "â­âé©å âAPP",
+      "type": 3,
+      "api": "csp_Hxq",
+      "ext": " http://www.å°ä¸ç¹.com/api/2026/fishhxq.php"
+    },
+    {
+      "key": "è¬è",
+      "name": "ð«âè¬èâAPP",
+      "type": 3,
+      "api": "csp_AppGet",
+      "ext": "https://allinadmin.oss-cn-hangzhou.aliyuncs.com/bk/9.txt|88689667dce61725"
+    },
+    {
+      "key": "csp_Jpys",
+      "name": "ð¥ï¸âéçâå½±è§",
+      "type": 3,
+      "api": "csp_Jpys",
+      "ext": "https://y2s52n7.com"
+    },
+    {
+      "key": "csp_Wwys",
+      "name": "ð¾ï¸âåæ°âå½±è§",
+      "type": 3,
+      "api": "csp_Wwys",
+      "ext": "https://vip.wwgz.cn:5200"
+    },
+    {
+      "key": "èç",
+      "name": "ð¬âèçâå½±è§",
+      "api": "csp_Jianpian",
+      "type": 3,
+      "playerType": "2",
+      "ext": "https://api.ztcgi.com"
+    },
+    {
+      "key": "csp_SaoHuo",
+      "name": "ð¥âç«ç«âå½±è§",
+      "type": 3,
+      "api": "csp_SaoHuo",
+      "playerType": 2,
+      "ext": "https://shdy5.us"
+    },
+    {
+      "key": "csp_Gz360",
+      "name": "ðâçå­âå½±è§",
+      "type": 3,
+      "api": "csp_Gz360",
+      "playerType": 2
+    },
+    {
+      "key": "åé¿",
+      "name": "ð­âåé¿âå½±è§",
+      "type": 3,
+      "playerType": "2",
+      "api": "csp_Czsapp",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://www.czzy89.com"
+    },
+    {
+      "key": "csp_SP360",
+      "name": "ðºâ360âå®æº",
+      "type": 3,
+      "api": "csp_SP360"
+    },
+    {
+      "key": "csp_Bili",
+      "name": "ð±âï¸åå©âåé",
+      "type": 3,
+      "api": "csp_Bili",
+      "playerType": 2,
+      "ext": {
+        "json": "https://nos.netease.com/ysf/0075389dca9afadd4614e9713765ff17.txt",
+        "cookie": ""
+      },
+      "style": {
+        "type": "rect",
+        "ratio": 1.333
+      }
+    },
+    {
+      "key": "csp_Dm84",
+      "name": "ð¤£âå¨æ¼«âå·´å£«",
+      "type": 3,
+      "playerType": "2",
+      "api": "csp_Dm84",
+      "ext": "https://dm84.net"
+    },
+    {
+      "key": "æ¹è",
+      "name": "ð·âæ¹èâå¨æ¼«",
+      "type": 3,
+      "api": "csp_AppGet",
+      "ext": "https://www.cyfz.top|e72cdfd629e8895d"
+    },
+    {
+      "key": "çªè¯",
+      "name": "ð âçªè¯âå¨æ¼«",
+      "type": 3,
+      "api": "csp_AppGet",
+      "ext": "https://app.omofun1.top|66dc309cbeeca454"
+    },
+    {
+      "key": "csp_FirstAid",
+      "name": "ðâæ¥æâæå­¦",
+      "type": 3,
+      "api": "csp_FirstAid",
+      "searchable": 0,
+      "quickSearch": 0,
+      "style": {
+        "type": "rect",
+        "ratio": 3.8
+      },
+      "gridview": "0-0-4.1"
+    },
+    {
+      "key": "é·ç",
+      "name": "ð¾âé·çâé³ä¹",
+      "type": 3,
+      "api": "csp_Kugou",
+      "playerType": 2,
+      "ext": {
+        "classes": [
+          {
+            "type_name": "é·ç",
+            "type_id": "kugou"
+          }
+        ]
+      }
+    },
+    {
+      "key": "MTV",
+      "name": "ð§âææâMV",
+      "type": 3,
+      "api": "csp_Bili",
+      "playerType": 2,
+      "ext": {
+        "json": "https://img2.gelonghui.com/library/2b4eb-8fb08a6b-f9f1-48d8-816a-1bc712a85fefnull",
+        "cookie": ""
+      },
+      "style": {
+        "type": "rect",
+        "ratio": 1.333
+      }
+    },
+    {
+      "key": "çç",
+      "name": "â¾âççâç´æ­",
+      "type": 3,
+      "api": "csp_Kanqiu",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0,
+      "gridview": 3,
+      "style": {
+        "type": "list"
+      }
+    },
+    {
+      "key": "çå­",
+      "name": "ðâçå­âä½è²",
+      "type": 3,
+      "api": "csp_GuaziTY",
+      "style": {
+        "type": "rect",
+        "ratio": 1.333
+      },
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 1,
+      "timeout": 12,
+      "order_num": 0,
+      "changeable": 0
+    },
+    {
+      "key": "ç±³æ",
+      "name": "ðâç±³æâç½ç",
+      "type": 3,
+      "api": "csp_MiSou",
+      "ext": "http://127.0.0.1:9978/file/fatcat/kk.txt"
+    },
+    {
+      "key": "csp_PanSearch",
+      "name": "ðâçæâç½ç",
+      "type": 3,
+      "api": "csp_PanSearch",
+      "ext": "http://127.0.0.1:9978/file/fatcat/token.txt"
+    },
+    {
+      "key": "å¿ç«¥",
+      "name": "ðâå¿ç«¥âå¯è",
+      "type": 3,
+      "api": "./api/drpy2.min.js",
+      "searchable": 0,
+      "quickSearch": 0,
+      "changeable": 0,
+      "style": {
+        "type": "rect",
+        "ratio": 1.597
+      },
+      "ext": "./js/åå°è´.js"
+    },
+    {
+      "key": "csp_å°å¿",
+      "name": "ðâå°å¿âæè²",
+      "type": 3,
+      "api": "csp_Bili",
+      "playerType": 2,
+      "ext": {
+        "json": "https://img2.gelonghui.com/library/1903b-eb0f1675-2437-4e72-bcf0-427b1626d79fnull",
+        "cookie": ""
+      },
+      "style": {
+        "type": "rect",
+        "ratio": 1.333
+      }
+    },
+    {
+      "key": "csp_å°å­¦",
+      "name": "ðâå°å­¦âè¯¾å ",
+      "type": 3,
+      "api": "csp_Bili",
+      "playerType": 2,
+      "ext": {
+        "json": "https://img2.gelonghui.com/library/a1140-144855fe-3eaa-44f3-b689-6812c233de54null",
+        "cookie": ""
+      },
+      "style": {
+        "type": "rect",
+        "ratio": 1.333
+      }
+    },
+    {
+      "key": "csp_åä¸­",
+      "name": "ðâåä¸­âè¯¾å ",
+      "type": 3,
+      "api": "csp_Bili",
+      "playerType": 2,
+      "ext": {
+        "json": "https://img2.gelonghui.com/library/ba156-73e16cad-8257-4f33-b8c0-e051e72e546dnull",
+        "cookie": ""
+      },
+      "style": {
+        "type": "rect",
+        "ratio": 1.333
+      }
+    },
+    {
+      "key": "csp_é«ä¸­",
+      "name": "ðâé«ä¸­âè¯¾å ",
+      "type": 3,
+      "api": "csp_Bili",
+      "playerType": 2,
+      "ext": {
+        "json": "https://img2.gelonghui.com/library/e44b3-4a82ab48-e014-49b2-bb66-ee5207e8f195null",
+        "cookie": ""
+      },
+      "style": {
+        "type": "rect",
+        "ratio": 1.333
+      }
+    },
+    {
+      "key": "feimao2_push_agent",
+      "name": "QQé¢éï¼è¥ç«å®è´",
+      "type": 3,
+      "api": "csp_Push",
+      "playerType": "1",
+      "searchable": 0,
+      "ext": ".json/txt/ken.txt"
+    },
+    {
       "key": "csp_KungFu404",
       "name": "🔥┃设置Token",
       "type": 3,
@@ -2000,7 +2430,7 @@
       "jar": "./libs/jar/Panda.jar"
     },
     {
-      "key": "csp_Netfixtv",
+      "key": "laoliubei_csp_Netfixtv",
       "name": "💌┃至臻┃影视",
       "type": 3,
       "api": "csp_Netfixtv",
@@ -2087,7 +2517,7 @@
       "ext": "./libs/hccx/兄弟.json"
     },
     {
-      "key": "csp_Duopan",
+      "key": "laoliubei_csp_Duopan",
       "name": "🖍︎┃蜡笔┃云盘",
       "type": 3,
       "api": "csp_Duopan",
@@ -2181,7 +2611,7 @@
       "changeable": 1
     },
     {
-      "key": "csp_Dm84",
+      "key": "laoliubei_csp_Dm84",
       "name": "🚌┃动漫┃巴士",
       "type": 3,
       "api": "csp_Dm84",
@@ -4087,7 +4517,7 @@
       "ext": "./libs/高中课堂.json"
     },
     {
-      "key": "csp_Bili",
+      "key": "laoliubei_csp_Bili",
       "name": "🅱️┃哔哩┃合集",
       "type": 3,
       "api": "csp_Bili",
@@ -5598,6 +6028,15 @@
       "epg": "http://epg.51zmt.top:8000/api/diyp/"
     },
     {
+      "name": "Gatherãæã",
+      "type": 3,
+      "url": "https://tv.tmxk.kdns.fr/yplrnuc7",
+      "epg": "https://material.1989.click/epg.xml.gz",
+      "ua": "okhttp/3.8.1",
+      "timeout": 10,
+      "playerType": 2
+    },
+    {
       "name": "肥猫",
       "type": 0,
       "url": "http://我不是.肥猫.live/TV/tvzb.txt",
@@ -6247,6 +6686,56 @@
       "name": "parwix",
       "type": 0,
       "url": "https://jx.parwix.com:4433/player/?url="
+    },
+    {
+      "name": "Jsonèå",
+      "type": 3,
+      "url": "Demo"
+    },
+    {
+      "name": "Webèå",
+      "type": 3,
+      "url": "Web"
+    },
+    {
+      "name": "qiyi[å®æº]",
+      "type": 1,
+      "url": "http://39.104.230.177:1122/lxjx/myyk.php?url="
+    },
+    {
+      "name": "è¥ç«æå¯ç±",
+      "type": 1,
+      "url": "http://xn--ihqu10cn4c.xn--z7x900a.live/jx.php?id=2&url=",
+      "ext": {
+        "flag": [
+          "qq",
+          "è¾è®¯",
+          "qiyi",
+          "ç±å¥èº",
+          "å¥èº",
+          "youku",
+          "ä¼é·",
+          "tucheng",
+          "sohu",
+          "æç",
+          "letv",
+          "ä¹è§",
+          "mgtv",
+          "èæ",
+          "tnmb",
+          "seven",
+          "yzm",
+          "aliyun",
+          "RJuMao",
+          "bilibili",
+          "1905",
+          "xinvip",
+          "XAL",
+          "qiqi",
+          "XALS",
+          "YuMi-vip"
+        ]
+      }
     },
     {
       "name": "公众号：肥猫宝贝",
@@ -7210,6 +7699,160 @@
       "host": "*",
       "rule": [
         "http((?!http).){12,}?\\.(m3u8|mp4|flv|avi|mkv|rm|wmv|mpg|m4a)\\?.*|http((?!http).){12,}\\.(m3u8|mp4|flv|avi|mkv|rm|wmv|mpg|m4a)|http((?!http).)*?xg.php\\?id=|http((?!http).)*?/m3/(.*)\\.css"
+      ]
+    },
+    {
+      "name": "â»ï¸éé",
+      "hosts": [
+        "lz",
+        "vip.lz",
+        "v.cdnlz",
+        "hd.lz",
+        "ffzy",
+        "vip.ffzy",
+        "hd.ffzy"
+      ],
+      "regex": [
+        "#EXT-X-DISCONTINUITY\r*\n*#EXTINF:6.666667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+        "#EXT-X-DISCONTINUITY\r*\n*#EXTINF:6.600000,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+      ]
+    },
+    {
+      "name": "â»ï¸ç´¢å°¼",
+      "hosts": [
+        "suonizy",
+        "qrssv.com"
+      ],
+      "regex": [
+        "15.1666",
+        "15.2666"
+      ]
+    },
+    {
+      "name": "â»ï¸ä¹è§",
+      "hosts": [
+        "leshiyun"
+      ],
+      "regex": [
+        "15.92"
+      ]
+    },
+    {
+      "name": "â»ï¸ä¼è´¨",
+      "hosts": [
+        "yzzy",
+        "playback"
+      ],
+      "regex": [
+        "16.63",
+        "18.66",
+        "17.66",
+        "19.13"
+      ]
+    },
+    {
+      "name": "â»ï¸å¿«ç",
+      "hosts": [
+        "kuaikan",
+        "vip.kuaikan"
+      ],
+      "regex": [
+        "15.32",
+        "15.231",
+        "18.066"
+      ]
+    },
+    {
+      "name": "â»ï¸360",
+      "hosts": [
+        "lyhuicheng"
+      ],
+      "regex": [
+        "#EXTINF.*?\\s+.*?hrz8QcR9.*?\\.ts\\s+",
+        "#EXT-X-KEY:METHOD=NONE[\\s\\S]*?#EXT-X-DISCONTINUITY"
+      ]
+    },
+    {
+      "name": "â»ï¸å¼æºæ£ç",
+      "hosts": [
+        "askzycdn",
+        "jkunbf",
+        "bfikuncdn",
+        "bfaskcdn"
+      ],
+      "regex": [
+        "#EXT-X-KEY:METHOD=NONE\r*\n*#EXTINF:5,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+        "#EXT-X-KEY:METHOD=AES-128,URI=\"[^\"]+\"\r*\n*#EXTINF:3.333,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+      ]
+    },
+    {
+      "name": "â»ï¸æ´é£",
+      "hosts": [
+        "bfengbf.com",
+        "bfzy",
+        "c1"
+      ],
+      "regex": [
+        "#EXTINF.*?\\s+.*?adjump.*?\\.ts\\s+",
+        "#EXT-X-DISCONTINUITY\r*\n*#EXTINF:3,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+      ]
+    },
+    {
+      "name": "â»ï¸åæ°",
+      "hosts": [
+        "toutiaovod.com"
+      ],
+      "regex": [
+        "video/tos/cn"
+      ]
+    },
+    {
+      "name": "â»ï¸ç«å±±",
+      "hosts": [
+        "huoshan.com"
+      ],
+      "regex": [
+        "item_id="
+      ]
+    },
+    {
+      "name": "â»ï¸æé³",
+      "hosts": [
+        "douyin.com"
+      ],
+      "regex": [
+        "is_play_url="
+      ]
+    },
+    {
+      "name": "â»ï¸ç£å",
+      "hosts": [
+        "magnet"
+      ],
+      "regex": [
+        "æ æ°",
+        "ç´ æ­",
+        "æ´ æ°"
+      ]
+    },
+    {
+      "name": "â»ï¸é¥­å¢ç¹å»",
+      "hosts": [
+        "dadagui",
+        "freeok",
+        "dadagui"
+      ],
+      "script": [
+        "document.querySelector(\"#playleft iframe\").contentWindow.document.querySelector(\"#start\").click();"
+      ]
+    },
+    {
+      "name": "â»ï¸æ¯é©´ç¹å»",
+      "hosts": [
+        "www.maolvys.com"
+      ],
+      "script": [
+        "document.getElementsByClassName('swal-button swal-button--confirm')[0].click()"
       ]
     },
     {

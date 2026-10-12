@@ -12,7 +12,7 @@
 ## 一、源可用性状态
 
 <!-- STATUS_START -->
-> 🔄 最近更新：2026-10-12 10:10:45（北京时间） · 成功 **5/10** 个源
+> 🔄 最近更新：2026-10-12 22:17:06（北京时间） · 成功 **6/10** 个源
 
 | 配置源 | 状态 | 使用地址 |
 | --- | --- | --- |
@@ -22,7 +22,7 @@
 | 摸鱼 | ❌ 失败 | Expecting value: line 1 column 1 (char 0) |
 | 4K小盒子 | ✅ 成功 | `http://xhztv.top/4k.json` |
 | 俊于(俊佬) | ✅ 成功 | `http://home.jundie.top:81/top98.json` |
-| 肥猫(新) | ❌ 失败 | Expecting property name enclosed in double quotes: line 1... |
+| 肥猫(新) | ✅ 成功 | `http://xn--z7x900a.net/` |
 | 老刘备 | ✅ 成功 | `https://ghfast.top/https://raw.githubusercontent.com/liu673cn/box/main/m.json` |
 | 短剧专线 | ❌ 失败 | HTTPConnectionPool(host='box.ufuzi.com', port=80): Max re... |
 | 自选71站(cshd固定) | ✅ 成功 | `https://raw.githubusercontent.com/cshd982/tvbox-ysc-config/main/config/tvbox_config.json` |
