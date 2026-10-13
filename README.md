@@ -12,11 +12,11 @@
 ## 一、源可用性状态
 
 <!-- STATUS_START -->
-> 🔄 最近更新：2026-10-13 10:11:01（北京时间） · 成功 **6/10** 个源
+> 🔄 最近更新：2026-10-13 22:15:14（北京时间） · 成功 **6/10** 个源
 
 | 配置源 | 状态 | 使用地址 |
 | --- | --- | --- |
-| 肥猫 | ❌ 失败 | Expecting property name enclosed in double quotes: line 1... |
+| 肥猫 | ❌ 失败 | ("Connection broken: ConnectionResetError(104, 'Connectio... |
 | 饭太硬 | ❌ 失败 | Expecting value: line 1 column 1 (char 0) |
 | 王二小 | ✅ 成功 | `https://9280.kstore.vip/aiwex.json` |
 | 摸鱼 | ❌ 失败 | Expecting value: line 1 column 1 (char 0) |
