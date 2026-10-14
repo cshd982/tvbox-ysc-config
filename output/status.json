@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13 22:15:14",
+  "updated_at": "2026-10-14 10:19:24",
   "repo": "cshd982/tvbox-ysc-config",
   "sources": [
     {
@@ -7,7 +7,7 @@
       "name": "肥猫",
       "ok": false,
       "used_url": null,
-      "error": "(\"Connection broken: ConnectionResetError(104, 'Connection reset by peer')\", ConnectionResetError(104, 'Connection reset by peer'))"
+      "error": "Expecting property name enclosed in double quotes: line 124 column 1 (char 2979)"
     },
     {
       "id": "fantaiying",
@@ -63,7 +63,7 @@
       "name": "短剧专线",
       "ok": false,
       "used_url": null,
-      "error": "HTTPConnectionPool(host='box.ufuzi.com', port=80): Max retries exceeded with url: /tv/qq/%E7%9F%AD%E5%89%A7%E9%A2%91%E9%81%93/api.json (Caused by ConnectTimeoutError(<HTTPConnection(host='box.ufuzi.com', port=80) at 0x7f44dc1ff9d0>, 'Connection to box.ufuzi.com timed out. (connect timeout=20)'))"
+      "error": "HTTPConnectionPool(host='box.ufuzi.com', port=80): Max retries exceeded with url: /tv/qq/%E7%9F%AD%E5%89%A7%E9%A2%91%E9%81%93/api.json (Caused by ConnectTimeoutError(<HTTPConnection(host='box.ufuzi.com', port=80) at 0x7fe8ce6f30d0>, 'Connection to box.ufuzi.com timed out. (connect timeout=20)'))"
     },
     {
       "id": "tvbox_clean",
