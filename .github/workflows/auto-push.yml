@@ -2,7 +2,7 @@ name: 自动推送配置到GitLink
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # 每天UTC 0点 = 北京时间8点
+    - cron: '0 0 */2 * *'  # 每2天UTC 0点 = 北京时间8点
   workflow_dispatch:
 
 jobs:
@@ -72,11 +72,19 @@ jobs:
           fake_cfg = jpeg_head + base64.b64encode(cfg_json)
           push_file("cfg.bmp", fake_cfg, f"点播自动更新 {now}")
 
-          # ===== 2. 直播源（纯文本txt，不伪装） =====
+          # ===== 2. 直播源（纯文本txt） =====
           print("\n=== 直播源 ===")
           m3u_url = "https://raw.githubusercontent.com/cshd982/iptv-api/master/output/user_result.m3u"
           m3u_data = http_get(m3u_url)
-          push_file("data.txt", m3u_data, f"直播自动更新 {now}")
+          print(f"  m3u大小: {len(m3u_data)} 字节")
+          try:
+              push_file("data.txt", m3u_data, f"直播自动更新 {now}")
+          except Exception as e:
+              print(f"  ✗ txt推送失败: {e}")
+              # 备选：伪装成bmp
+              print("  尝试伪装成bmp...")
+              fake_m3u = jpeg_head + base64.b64encode(m3u_data)
+              push_file("data.bmp", fake_m3u, f"直播自动更新 {now}")
 
           print("\n=== 全部完成 ===")
           EOF
