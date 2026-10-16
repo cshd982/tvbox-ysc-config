@@ -63,7 +63,7 @@ jobs:
           # ===== 1. 点播配置（伪装成bmp） =====
           print("=== 点播配置 ===")
           jpeg_head = http_get(JPEG_HEAD_URL)[:JPEG_HEAD_LEN]
-          cfg_json = open("output/多仓订阅.json", 'rb').read()
+          cfg_json = open("output/单仓聚合.json", 'rb').read()
           fake_cfg = jpeg_head + base64.b64encode(cfg_json)
           push_file("cfg.bmp", fake_cfg, f"点播自动更新 {now}")
 
