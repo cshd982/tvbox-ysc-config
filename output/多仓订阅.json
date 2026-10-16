@@ -1,6 +1,10 @@
 {
   "urls": [
     {
+      "name": "肥猫",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/cshd982/tvbox-ysc-config/main/output/feimao.json"
+    },
+    {
       "name": "王二小",
       "url": "https://ghfast.top/https://raw.githubusercontent.com/cshd982/tvbox-ysc-config/main/output/wangerxiao.json"
     },
