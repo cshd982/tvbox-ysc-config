@@ -3,7 +3,7 @@ name: 自动推送配置到GitLink
 on:
   schedule:
     - cron: '0 0 * * *'  # 每天UTC 0点 = 北京时间8点
-  workflow_dispatch:  # 支持手动触发
+  workflow_dispatch:
 
 jobs:
   push:
@@ -25,14 +25,9 @@ jobs:
           import base64, json, os, urllib.request
           from datetime import datetime
 
-          # 配置
-          GITHUB_OWNER = "cshd982"
-          GITHUB_REPO = "tvbox-ysc-config"
-          CONFIG_FILE = "output/多仓订阅.json"
+          TOKEN = os.environ['GITLINK_TOKEN']
           GITLINK_OWNER = "cshd982"
           GITLINK_REPO = "data"
-          GITLINK_FILE = "cfg.bmp"
-          TOKEN = os.environ['GITLINK_TOKEN']
           JPEG_HEAD_URL = "https://cdn09022024.gitlink.org.cn/api/v1/repos/xxooo/in/raw/in.bmp"
           JPEG_HEAD_LEN = 2411
 
@@ -50,33 +45,33 @@ jobs:
               resp = urllib.request.urlopen(req, timeout=30)
               return json.loads(resp.read())
 
-          # 1. 伪装头
+          def push_file(gitlink_file, file_bytes, msg):
+              content_b64 = base64.b64encode(file_bytes).decode()
+              path = f"/repos/{GITLINK_OWNER}/{GITLINK_REPO}/contents/{gitlink_file}"
+              body = {"content": content_b64, "message": msg, "branch": "master"}
+              try:
+                  existing = http_api("GET", f"{path}?ref=master", token=TOKEN)
+                  body["sha"] = existing['sha']
+                  print(f"  {gitlink_file}: 更新旧文件")
+              except Exception:
+                  print(f"  {gitlink_file}: 新建文件")
+              http_api("PUT", path, body, TOKEN)
+              print(f"  ✓ {gitlink_file} 推送成功 ({len(file_bytes)} 字节)")
+
+          now = datetime.now().strftime('%Y-%m-%d %H:%M')
+
+          # ===== 1. 点播配置（伪装成bmp） =====
+          print("=== 点播配置 ===")
           jpeg_head = http_get(JPEG_HEAD_URL)[:JPEG_HEAD_LEN]
-          print(f"伪装头: {len(jpeg_head)} 字节")
+          cfg_json = open("output/多仓订阅.json", 'rb').read()
+          fake_cfg = jpeg_head + base64.b64encode(cfg_json)
+          push_file("cfg.bmp", fake_cfg, f"点播自动更新 {now}")
 
-          # 2. 本地配置文件（checkout出来的）
-          with open(CONFIG_FILE, 'rb') as f:
-              cfg_json = f.read()
-          print(f"配置文件: {len(cfg_json)} 字节")
+          # ===== 2. 直播源（纯文本txt，不伪装） =====
+          print("\n=== 直播源 ===")
+          m3u_url = "https://raw.githubusercontent.com/cshd982/iptv-api/master/output/user_result.m3u"
+          m3u_data = http_get(m3u_url)
+          push_file("data.txt", m3u_data, f"直播自动更新 {now}")
 
-          # 3. 伪装
-          b64 = base64.b64encode(cfg_json)
-          fake = jpeg_head + b64
-          print(f"伪装文件: {len(fake)} 字节")
-
-          # 4. 推送
-          content_b64 = base64.b64encode(fake).decode()
-          msg = f"auto {datetime.now().strftime('%Y-%m-%d %H:%M')}"
-          path = f"/repos/{GITLINK_OWNER}/{GITLINK_REPO}/contents/{GITLINK_FILE}"
-
-          body = {"content": content_b64, "message": msg, "branch": "master"}
-          try:
-              existing = http_api("GET", f"{path}?ref=master", token=TOKEN)
-              body["sha"] = existing['sha']
-              print("文件已存在，更新中")
-          except Exception:
-              print("文件不存在，新建中")
-
-          http_api("PUT", path, body, TOKEN)
-          print("✓ 推送成功")
+          print("\n=== 全部完成 ===")
           EOF
