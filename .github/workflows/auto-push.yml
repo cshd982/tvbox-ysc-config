@@ -1,0 +1,82 @@
+name: 自动推送配置到GitLink
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 每天UTC 0点 = 北京时间8点
+  workflow_dispatch:  # 支持手动触发
+
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 拉取仓库
+        uses: actions/checkout@v4
+
+      - name: 配置Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 推送配置到GitLink
+        env:
+          GITLINK_TOKEN: ${{ secrets.GITLINK_TOKEN }}
+        run: |
+          python3 << 'EOF'
+          import base64, json, os, urllib.request
+          from datetime import datetime
+
+          # 配置
+          GITHUB_OWNER = "cshd982"
+          GITHUB_REPO = "tvbox-ysc-config"
+          CONFIG_FILE = "output/多仓订阅.json"
+          GITLINK_OWNER = "cshd982"
+          GITLINK_REPO = "data"
+          GITLINK_FILE = "cfg.bmp"
+          TOKEN = os.environ['GITLINK_TOKEN']
+          JPEG_HEAD_URL = "https://cdn09022024.gitlink.org.cn/api/v1/repos/xxooo/in/raw/in.bmp"
+          JPEG_HEAD_LEN = 2411
+
+          def http_get(url, timeout=30):
+              req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+              return urllib.request.urlopen(req, timeout=timeout).read()
+
+          def http_api(method, path, body=None, token=None):
+              url = f"https://cdn09022024.gitlink.org.cn/api/v1{path}"
+              headers = {'Content-Type': 'application/json'}
+              if token:
+                  headers['Authorization'] = f'token {token}'
+              data = json.dumps(body).encode() if body else None
+              req = urllib.request.Request(url, data=data, headers=headers, method=method)
+              resp = urllib.request.urlopen(req, timeout=30)
+              return json.loads(resp.read())
+
+          # 1. 伪装头
+          jpeg_head = http_get(JPEG_HEAD_URL)[:JPEG_HEAD_LEN]
+          print(f"伪装头: {len(jpeg_head)} 字节")
+
+          # 2. 本地配置文件（checkout出来的）
+          with open(CONFIG_FILE, 'rb') as f:
+              cfg_json = f.read()
+          print(f"配置文件: {len(cfg_json)} 字节")
+
+          # 3. 伪装
+          b64 = base64.b64encode(cfg_json)
+          fake = jpeg_head + b64
+          print(f"伪装文件: {len(fake)} 字节")
+
+          # 4. 推送
+          content_b64 = base64.b64encode(fake).decode()
+          msg = f"auto {datetime.now().strftime('%Y-%m-%d %H:%M')}"
+          path = f"/repos/{GITLINK_OWNER}/{GITLINK_REPO}/contents/{GITLINK_FILE}"
+
+          body = {"content": content_b64, "message": msg, "branch": "master"}
+          try:
+              existing = http_api("GET", f"{path}?ref=master", token=TOKEN)
+              body["sha"] = existing['sha']
+              print("文件已存在，更新中")
+          except Exception:
+              print("文件不存在，新建中")
+
+          http_api("PUT", path, body, TOKEN)
+          print("✓ 推送成功")
+          EOF
