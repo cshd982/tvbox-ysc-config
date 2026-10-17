@@ -22,14 +22,14 @@ jobs:
           GITLINK_TOKEN: ${{ secrets.GITLINK_TOKEN }}
         run: |
           python3 << 'EOF'
-          import base64, json, os, urllib.request
+          import base64, json, os, urllib.request, urllib.error
           from datetime import datetime
 
           TOKEN = os.environ['GITLINK_TOKEN']
           GITLINK_OWNER = "cshd982"
           GITLINK_REPO = "data"
           JPEG_HEAD_URL = "https://cdn09022024.gitlink.org.cn/api/v1/repos/cshd982/data/raw/master/LL.jpg"
-          MAGIC = b"VjVsmoeD**"  # TVBox 伪装 magic，必须10字节两个星号
+          MAGIC = b"VjVsmoeD**"  # TVBox伪装magic，10字节两个星号
 
           def http_get(url, timeout=30):
               req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
@@ -47,7 +47,7 @@ jobs:
                   return json.loads(resp.read())
               except urllib.error.HTTPError as e:
                   err_body = e.read().decode()
-                  print(f"    API错误 {e.code}: {err_body[:500]}")
+                  print(f"    API错误 {e.code}: {err_body[:300]}")
                   raise
 
           def push_file(gitlink_file, file_bytes, msg):
@@ -59,49 +59,52 @@ jobs:
                   body["sha"] = existing['sha']
                   print(f"  {gitlink_file}: 更新旧文件")
               except Exception:
-                  print(f"  {gitlink_file}: 新建文件")
+                  print(f"  {gitlink_file}: 新建文件(需先在网页建空文件)")
+                  return False
               http_api("PUT", path, body, TOKEN)
               print(f"  ✓ {gitlink_file} 推送成功 ({len(file_bytes)} 字节)")
+              return True
 
           now = datetime.now().strftime('%Y-%m-%d %H:%M')
 
-          # ===== 1. 点播配置（伪装成bmp） =====
-          print("=== 点播配置 ===")
-          # 取完整LL.jpg（自动定位FF D9结束符）
+          # 取完整LL.jpg做伪装头
           jpeg_full = http_get(JPEG_HEAD_URL)
           end = jpeg_full.find(b'\xff\xd9')
-          if end < 0:
-              raise RuntimeError("LL.jpg 不是完整JPEG，找不到FF D9")
           jpeg_head = jpeg_full[:end+2]
-          print(f"  JPEG头: {len(jpeg_head)} 字节 (含FF D9)")
+          print(f"JPEG头: {len(jpeg_head)} 字节 (含FF D9)")
 
-          # 读单仓聚合.json（完整TVBox单仓配置，不是多仓订阅）
-          cfg_json = open("output/多仓订阅.json", 'rb').read()
-          print(f"  多仓订阅: {len(cfg_json)} 字节")
-
-          # 结构: JPEG头(含FFD9) + magic + base64(JSON)
-          fake_cfg = jpeg_head + MAGIC + base64.b64encode(cfg_json)
-
-          # 推送前自检：模拟TVBox解码流程
-          test_end = fake_cfg.find(b'\xff\xd9')
-          test_b64 = fake_cfg[test_end+2+len(MAGIC):]
-          test_json = json.loads(base64.b64decode(test_b64))
-          print(f"  自检: 解码OK, sites={len(test_json.get('sites',[]))}")
-
-          push_file("cfg.bmp", fake_cfg, f"点播自动更新 {now}")
-
-          # ===== 2. 直播源（纯文本txt） =====
-          print("\n=== 直播源 ===")
-          m3u_url = "https://raw.githubusercontent.com/cshd982/iptv-api/master/output/user_result.m3u"
-          m3u_data = http_get(m3u_url)
-          print(f"  m3u大小: {len(m3u_data)} 字节")
+          # ===== 1. 多仓订阅 → cfg.bmp (fongmi tv用) =====
+          print("\n=== 多仓订阅 cfg.bmp ===")
           try:
-              push_file("data.txt", m3u_data, f"直播自动更新 {now}")
+              duo = open("output/多仓订阅.json", 'rb').read()
+              fake_duo = jpeg_head + MAGIC + base64.b64encode(duo)
+              push_file("cfg.bmp", fake_duo, f"ADD file via upload {now}")
           except Exception as e:
-              print(f"  ✗ txt推送失败: {e}")
-              print("  尝试伪装成bmp...")
-              fake_m3u = jpeg_head + MAGIC + base64.b64encode(m3u_data)
-              push_file("data.bmp", fake_m3u, f"直播自动更新 {now}")
+              print(f"  ✗ 失败: {e}")
+
+          # ===== 2. 单仓聚合 → cfg_single.bmp (影视仓用) =====
+          print("\n=== 单仓聚合 cfg_single.bmp ===")
+          try:
+              single = open("output/单仓聚合.json", 'rb').read()
+              fake_single = jpeg_head + MAGIC + base64.b64encode(single)
+              # 自检
+              te = fake_single.find(b'\xff\xd9')
+              tb = fake_single[te+2+len(MAGIC):]
+              tj = json.loads(base64.b64decode(tb))
+              print(f"  自检: sites={len(tj.get('sites',[]))}")
+              push_file("cfg_single.bmp", fake_single, f"ADD file via upload {now}")
+          except Exception as e:
+              print(f"  ✗ 失败: {e}")
+
+          # ===== 3. 直播源 → data.txt =====
+          print("\n=== 直播源 data.txt ===")
+          m3u_url = "https://raw.githubusercontent.com/cshd982/iptv-api/master/output/user_result.m3u"
+          try:
+              m3u = http_get(m3u_url)
+              print(f"  m3u大小: {len(m3u)} 字节")
+              push_file("data.txt", m3u, f"直播自动更新 {now}")
+          except Exception as e:
+              print(f"  ✗ 失败: {e}")
 
           print("\n=== 全部完成 ===")
           EOF
