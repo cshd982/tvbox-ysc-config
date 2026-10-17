@@ -29,7 +29,7 @@ jobs:
           GITLINK_OWNER = "cshd982"
           GITLINK_REPO = "data"
           JPEG_HEAD_URL = "https://cdn09022024.gitlink.org.cn/api/v1/repos/cshd982/data/raw/master/LL.jpg"
-          JPEG_HEAD_LEN = 2411
+          MAGIC = b"VjVsmoeD**"  # TVBox 伪装 magic，必须10字节两个星号
 
           def http_get(url, timeout=30):
               req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
@@ -67,9 +67,27 @@ jobs:
 
           # ===== 1. 点播配置（伪装成bmp） =====
           print("=== 点播配置 ===")
-          jpeg_head = http_get(JPEG_HEAD_URL)[:JPEG_HEAD_LEN]
+          # 取完整LL.jpg（自动定位FF D9结束符）
+          jpeg_full = http_get(JPEG_HEAD_URL)
+          end = jpeg_full.find(b'\xff\xd9')
+          if end < 0:
+              raise RuntimeError("LL.jpg 不是完整JPEG，找不到FF D9")
+          jpeg_head = jpeg_full[:end+2]
+          print(f"  JPEG头: {len(jpeg_head)} 字节 (含FF D9)")
+
+          # 读单仓聚合.json（完整TVBox单仓配置，不是多仓订阅）
           cfg_json = open("output/多仓订阅.json", 'rb').read()
-          fake_cfg = jpeg_head + base64.b64encode(cfg_json)
+          print(f"  多仓订阅: {len(cfg_json)} 字节")
+
+          # 结构: JPEG头(含FFD9) + magic + base64(JSON)
+          fake_cfg = jpeg_head + MAGIC + base64.b64encode(cfg_json)
+
+          # 推送前自检：模拟TVBox解码流程
+          test_end = fake_cfg.find(b'\xff\xd9')
+          test_b64 = fake_cfg[test_end+2+len(MAGIC):]
+          test_json = json.loads(base64.b64decode(test_b64))
+          print(f"  自检: 解码OK, sites={len(test_json.get('sites',[]))}")
+
           push_file("cfg.bmp", fake_cfg, f"点播自动更新 {now}")
 
           # ===== 2. 直播源（纯文本txt） =====
@@ -81,9 +99,8 @@ jobs:
               push_file("data.txt", m3u_data, f"直播自动更新 {now}")
           except Exception as e:
               print(f"  ✗ txt推送失败: {e}")
-              # 备选：伪装成bmp
               print("  尝试伪装成bmp...")
-              fake_m3u = jpeg_head + base64.b64encode(m3u_data)
+              fake_m3u = jpeg_head + MAGIC + base64.b64encode(m3u_data)
               push_file("data.bmp", fake_m3u, f"直播自动更新 {now}")
 
           print("\n=== 全部完成 ===")
