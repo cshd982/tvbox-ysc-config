@@ -260,6 +260,18 @@ def main() -> int:
     with open(CONFIG_FILE, "r", encoding="utf-8") as f:
         cfg = json.load(f)
     os.makedirs(OUTPUT_DIR, exist_ok=True)
+    # ===== 清理上一次遗留的单仓配置文件 =====
+    # 只保留静态文件 tvbox_clean.json；本次成功抓取的源会重新写入 {sid}.json；
+    # 本次失败或已从 sources.json 删除的源，旧文件直接删除，不再堆积。
+    if os.path.isdir(OUTPUT_DIR):
+        for fn in os.listdir(OUTPUT_DIR):
+            if fn.endswith(".json") and fn != "tvbox_clean.json":
+                fp = os.path.join(OUTPUT_DIR, fn)
+                try:
+                    os.remove(fp)
+                    print(f"[CLEAN] 删除旧文件: {fn}")
+                except Exception as e:
+                    print(f"[CLEAN] 删除失败 {fn}: {e}")
     # 东八区时间，便于阅读
     tz = datetime.timezone(datetime.timedelta(hours=8))
     now_str = datetime.datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
