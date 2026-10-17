@@ -40,7 +40,7 @@
   "sites": [
     {
       "key": "notice_update",
-      "name": "🕐更新时间：2026-10-16 22:27:15（北京时间）",
+      "name": "🕐更新时间：2026-10-17 10:23:27（北京时间）",
       "type": 3,
       "api": "csp_Notice",
       "searchable": 0
@@ -458,7 +458,7 @@
     },
     {
       "key": "Doubanaaaa",
-      "name": "🐮【更新日期:20261016】🐮",
+      "name": "🐮【更新日期:20261017】🐮",
       "type": 3,
       "api": "csp_NewDouBanGuard",
       "indexs": 1,
