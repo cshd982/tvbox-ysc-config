@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17 10:56:03",
+  "updated_at": "2026-10-17 11:06:05",
   "repo": "cshd982/tvbox-ysc-config",
   "sources": [
     {
@@ -10,11 +10,11 @@
       "error": null
     },
     {
-      "id": "daozhang",
-      "name": "道长",
-      "ok": false,
-      "used_url": null,
-      "error": "Expecting value: line 1 column 1 (char 0)"
+      "id": "dongli",
+      "name": "东篱",
+      "ok": true,
+      "used_url": "https://gh-proxy.com/https://raw.githubusercontent.com/chitue/dongliTV/main/api.json",
+      "error": null
     },
     {
       "id": "wangerxiao",
@@ -24,11 +24,11 @@
       "error": null
     },
     {
-      "id": "moyu",
-      "name": "摸鱼",
-      "ok": false,
-      "used_url": null,
-      "error": "Expecting value: line 1 column 1 (char 0)"
+      "id": "dxawi",
+      "name": "dxawi",
+      "ok": true,
+      "used_url": "https://dxawi.github.io/0/0.json",
+      "error": null
     },
     {
       "id": "4k",
@@ -63,7 +63,7 @@
       "name": "短剧专线",
       "ok": false,
       "used_url": null,
-      "error": "HTTPConnectionPool(host='box.ufuzi.com', port=80): Max retries exceeded with url: /tv/qq/%E7%9F%AD%E5%89%A7%E9%A2%91%E9%81%93/api.json (Caused by ConnectTimeoutError(<HTTPConnection(host='box.ufuzi.com', port=80) at 0x7f116a4378d0>, 'Connection to box.ufuzi.com timed out. (connect timeout=20)'))"
+      "error": "HTTPConnectionPool(host='box.ufuzi.com', port=80): Max retries exceeded with url: /tv/qq/%E7%9F%AD%E5%89%A7%E9%A2%91%E9%81%93/api.json (Caused by ConnectTimeoutError(<HTTPConnection(host='box.ufuzi.com', port=80) at 0x7f43d8a537d0>, 'Connection to box.ufuzi.com timed out. (connect timeout=20)'))"
     },
     {
       "id": "tvbox_clean",

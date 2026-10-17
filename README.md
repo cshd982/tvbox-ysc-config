@@ -12,14 +12,14 @@
 ## 一、源可用性状态
 
 <!-- STATUS_START -->
-> 🔄 最近更新：2026-10-17 10:56:03（北京时间） · 成功 **7/10** 个源
+> 🔄 最近更新：2026-10-17 11:06:05（北京时间） · 成功 **9/10** 个源
 
 | 配置源 | 状态 | 使用地址 |
 | --- | --- | --- |
 | 肥猫 | ✅ 成功 | `http://肥猫.net/tv` |
-| 道长 | ❌ 失败 | Expecting value: line 1 column 1 (char 0) |
+| 东篱 | ✅ 成功 | `https://gh-proxy.com/https://raw.githubusercontent.com/chitue/dongliTV/main/api.json` |
 | 王二小 | ✅ 成功 | `https://9280.kstore.vip/aiwex.json` |
-| 摸鱼 | ❌ 失败 | Expecting value: line 1 column 1 (char 0) |
+| dxawi | ✅ 成功 | `https://dxawi.github.io/0/0.json` |
 | 4K小盒子 | ✅ 成功 | `http://xhztv.top/4k.json` |
 | 动漫城 | ✅ 成功 | `https://www.yingm.cc/dm/dm.json` |
 | 肥猫(新) | ✅ 成功 | `http://xn--z7x900a.net/` |
