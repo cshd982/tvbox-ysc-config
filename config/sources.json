@@ -11,13 +11,13 @@
       "note": "实测可用：返回合法TVBox配置(17043B含spider/sites)。原6296.kstore.vip/facat.json 已401失效舍弃"
     },
     {
-      "id": "daozhang",
-      "name": "道长",
+      "id": "dongli",
+      "name": "东篱",
       "urls": [
-        "https://cdn.gitmirror.com/bb/xduo/libs/master/index.json",
-        "http://www.饭太硬.art/tv",
-        "http://www.饭太硬.cc/tv",
-        "http://fty.888484.xyz/tv"
+        "https://gh-proxy.com/https://raw.githubusercontent.com/chitue/dongliTV/main/api.json",
+        " ",
+        " ",
+        " "
       ],
       "note": "返回12-20KB内容但非标准TVBox JSON，疑反爬/加密，需在影视仓实测；无法从本机可靠判定"
     },
@@ -31,10 +31,10 @@
       "note": "9280.kstore.vip/aiwex.json 实测可用(34555B含spider)"
     },
     {
-      "id": "moyu",
-      "name": "摸鱼",
+      "id": "dxawi",
+      "name": "dxawi",
       "urls": [
-        "http://我不是.摸鱼儿.com"
+        "https://dxawi.github.io/0/0.json"
       ],
       "note": "返回7KB内容但非标准JSON，需影视仓实测；其余摸鱼儿.cc/.xyz/清清.top 已失效舍弃"
     },
