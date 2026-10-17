@@ -28,7 +28,7 @@ jobs:
           TOKEN = os.environ['GITLINK_TOKEN']
           GITLINK_OWNER = "cshd982"
           GITLINK_REPO = "data"
-          JPEG_HEAD_URL = "https://cdn09022024.gitlink.org.cn/api/v1/repos/xxooo/in/raw/in.bmp"
+          JPEG_HEAD_URL = "https://cdn09022024.gitlink.org.cn/api/v1/repos/cshd982/data/raw/master/LL.jpg"
           JPEG_HEAD_LEN = 2411
 
           def http_get(url, timeout=30):
