@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17 10:42:38",
+  "updated_at": "2026-10-17 10:56:03",
   "repo": "cshd982/tvbox-ysc-config",
   "sources": [
     {
@@ -10,8 +10,8 @@
       "error": null
     },
     {
-      "id": "fantaiying",
-      "name": "饭太硬",
+      "id": "daozhang",
+      "name": "道长",
       "ok": false,
       "used_url": null,
       "error": "Expecting value: line 1 column 1 (char 0)"
@@ -38,12 +38,11 @@
       "error": null
     },
     {
-      "id": "junyu",
-      "name": "俊于(俊佬)",
+      "id": "dongman",
+      "name": "动漫城",
       "ok": true,
-      "used_url": "(缓存)",
-      "error": "Invalid URL '': No scheme supplied. Perhaps you meant https://?",
-      "cached": true
+      "used_url": "https://www.yingm.cc/dm/dm.json",
+      "error": null
     },
     {
       "id": "feimao2",
@@ -64,7 +63,7 @@
       "name": "短剧专线",
       "ok": false,
       "used_url": null,
-      "error": "HTTPConnectionPool(host='box.ufuzi.com', port=80): Max retries exceeded with url: /tv/qq/%E7%9F%AD%E5%89%A7%E9%A2%91%E9%81%93/api.json (Caused by ConnectTimeoutError(<HTTPConnection(host='box.ufuzi.com', port=80) at 0x7f7d5e6edb10>, 'Connection to box.ufuzi.com timed out. (connect timeout=20)'))"
+      "error": "HTTPConnectionPool(host='box.ufuzi.com', port=80): Max retries exceeded with url: /tv/qq/%E7%9F%AD%E5%89%A7%E9%A2%91%E9%81%93/api.json (Caused by ConnectTimeoutError(<HTTPConnection(host='box.ufuzi.com', port=80) at 0x7f116a4378d0>, 'Connection to box.ufuzi.com timed out. (connect timeout=20)'))"
     },
     {
       "id": "tvbox_clean",
