@@ -42,6 +42,10 @@ TVBOX_KEYS = ("sites", "spiders", "lives", "store", "exts", "parses", "flags")
 # 若 ghfast.top 在你的网络里不可用，可整体换成其他镜像，例如：
 #   "https://gh-proxy.org/"  /  "https://ghproxy.net/"  /  ""（留空=不加镜像，直连 raw）
 RAW_MIRROR = "https://ghfast.top/"
+# 强制指定的 spider 爬虫 jar（真 .jar，FongMi/TV 兼容）。
+# 各抓取源自带的 spider 常是 .jpg 伪装或已失效，导致 FongMi/TV 点播站点无反应；
+# 这里统一覆盖为一个真实可用的爬虫 jar，单仓聚合里所有 csp_ 站点都靠它解析。
+FORCE_SPIDER = "https://mpimg.cn/down.php/d479d37ee36fa366b646f77d17b76fb1.jar"
 def _strip_js_comments(text: str) -> str:
     """剔除 JSON 中内嵌的 // 行注释（部分接口会在字段后追加免责注释）。"""
     lines = text.split("\n")
@@ -352,6 +356,9 @@ def main() -> int:
     merged = merge_configs(fetched)
     merged_path = os.path.join(OUTPUT_DIR, "单仓聚合.json")
     if merged is not None:
+        # 强制覆盖 spider 为真实可用的爬虫 jar，避免继承某源的 jpg 伪装 jar
+        # 导致 FongMi/TV（及部分播放器）点播站点点击无反应
+        merged["spider"] = FORCE_SPIDER
         merged["sites"] = reorder_sites(
             merged.get("sites", []),
             datetime.datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S"),
@@ -359,6 +366,7 @@ def main() -> int:
         with open(merged_path, "w", encoding="utf-8") as f:
             json.dump(merged, f, ensure_ascii=False, indent=2)
         print(f"聚合单仓：{merged_path}（共 {len(merged.get('sites', []))} 个站点）")
+        print(f"强制 spider：{FORCE_SPIDER}")
     # 生成更新状态文件（时间取全部抓取完成之后）
     status["updated_at"] = datetime.datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
     with open(os.path.join(OUTPUT_DIR, "status.json"), "w", encoding="utf-8") as f:
