@@ -12,7 +12,7 @@
 ## 一、源可用性状态
 
 <!-- STATUS_START -->
-> 🔄 最近更新：2026-10-17 10:23:27（北京时间） · 成功 **7/10** 个源
+> 🔄 最近更新：2026-10-17 10:42:38（北京时间） · 成功 **7/10** 个源
 
 | 配置源 | 状态 | 使用地址 |
 | --- | --- | --- |
@@ -21,7 +21,7 @@
 | 王二小 | ✅ 成功 | `https://9280.kstore.vip/aiwex.json` |
 | 摸鱼 | ❌ 失败 | Expecting value: line 1 column 1 (char 0) |
 | 4K小盒子 | ✅ 成功 | `http://xhztv.top/4k.json` |
-| 俊于(俊佬) | ✅ 成功 | `http://home.jundie.top:81/top98.json` |
+| 俊于(俊佬) | 📦 缓存 | 上次成功配置（本次更新未抓到，沿用缓存） |
 | 肥猫(新) | ✅ 成功 | `http://xn--z7x900a.net/` |
 | 老刘备 | ✅ 成功 | `https://ghfast.top/https://raw.githubusercontent.com/liu673cn/box/main/m.json` |
 | 短剧专线 | ❌ 失败 | HTTPConnectionPool(host='box.ufuzi.com', port=80): Max re... |

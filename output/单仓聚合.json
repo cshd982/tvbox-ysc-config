@@ -1,5 +1,5 @@
 {
-  "spider": "https://img2.tofaka.com/autoupload/f/eja2s/20261016/MmQe/0X0/PandaQ1016.png;md5;674fa106d764077a7be5cf646ea9b564",
+  "spider": "https://mpimg.cn/down.php/d479d37ee36fa366b646f77d17b76fb1.jar",
   "wallpaper": "https://深色壁纸.xxooo.cf/",
   "logo": "http://w.junce.dpdns.org/fm.gif",
   "headers": [
@@ -40,7 +40,7 @@
   "sites": [
     {
       "key": "notice_update",
-      "name": "🕐更新时间：2026-10-17 10:23:27（北京时间）",
+      "name": "🕐更新时间：2026-10-17 10:42:38（北京时间）",
       "type": 3,
       "api": "csp_Notice",
       "searchable": 0
