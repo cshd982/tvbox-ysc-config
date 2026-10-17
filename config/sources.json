@@ -11,10 +11,10 @@
       "note": "实测可用：返回合法TVBox配置(17043B含spider/sites)。原6296.kstore.vip/facat.json 已401失效舍弃"
     },
     {
-      "id": "fantaiying",
-      "name": "饭太硬",
+      "id": "daozhang",
+      "name": "道长",
       "urls": [
-        "http://www.饭太硬.net/tv",
+        "https://cdn.gitmirror.com/bb/xduo/libs/master/index.json",
         "http://www.饭太硬.art/tv",
         "http://www.饭太硬.cc/tv",
         "http://fty.888484.xyz/tv"
@@ -47,10 +47,10 @@
       "note": "实测可用(30612B含spider)"
     },
     {
-      "id": "junyu",
-      "name": "俊于(俊佬)",
+      "id": "dongman",
+      "name": "动漫城",
       "urls": [
-        "  "
+        "https://www.yingm.cc/dm/dm.json"
       ],
       "note": "实测可用(16543B含spider)"
     },
