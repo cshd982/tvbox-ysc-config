@@ -1,6 +1,6 @@
 {
   "spider": "https://mpimg.cn/down.php/d479d37ee36fa366b646f77d17b76fb1.jar",
-  "danmaku": "http://127.0.0.1:9978/proxy?do=danmaku&name={name}&episode={episode}",
+  "danmaku": "http://xn--z7x900a.net/danmu5266/auto.php?name={name}&episode={episode}",
   "wallpaper": "https://ж·ұиүІеЈҒзәё.xxooo.cf/",
   "logo": "http://w.junce.dpdns.org/fm.gif",
   "headers": [
@@ -41,7 +41,7 @@
   "sites": [
     {
       "key": "notice_update",
-      "name": "🕐更新时间：2026-10-19 22:32:19（北京时间）",
+      "name": "🕐更新时间：2026-10-20 10:22:42（北京时间）",
       "type": 3,
       "api": "csp_Notice",
       "searchable": 0
@@ -1540,7 +1540,7 @@
     },
     {
       "key": "Doubanaaaa",
-      "name": "🐮【更新日期:20261017】🐮",
+      "name": "🐮【更新日期:20261020】🐮",
       "type": 3,
       "api": "csp_NewDouBanGuard",
       "indexs": 1,
