@@ -105,6 +105,14 @@ jobs:
               push_file("data.txt", m3u, f"直播自动更新 {now}")
           except Exception as e:
               print(f"  ✗ 失败: {e}")
-
+          # ===== 4. EPG 节目单 → epg.xml =====
+          print("\n=== EPG 节目单 epg.xml ===")
+          epg_url = "https://raw.githubusercontent.com/cshd982/iptv-api/master/output/epg/epg.xml"
+          try:
+              epg = http_get(epg_url)
+              print(f"  epg大小: {len(epg)} 字节")
+              push_file("epg.xml", epg, f"EPG自动更新 {now}")
+          except Exception as e:
+              print(f"  ✗ 失败: {e}") 
           print("\n=== 全部完成 ===")
           EOF
