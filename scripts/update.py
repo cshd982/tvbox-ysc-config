@@ -296,7 +296,12 @@ def main() -> int:
         for url in urls:
             try:
                 data = fetch_config(url)
+                # 强制覆盖该源自带 spider 为真实 jar，避免 .png 伪装导致影视仓判"无效接口"
+                # （与聚合单仓同一逻辑：FongMi/TV 及影视仓需真 jar 才能解析点播站点）
+                if isinstance(data, dict) and data.get("spider"):
+                    data["spider"] = FORCE_SPIDER
                 out_path = os.path.join(OUTPUT_DIR, f"{sid}.json")
+
                 with open(out_path, "w", encoding="utf-8") as f:
                     json.dump(data, f, ensure_ascii=False, indent=2)
                 entry["ok"] = True
@@ -322,8 +327,11 @@ def main() -> int:
                 try:
                     with open(cache_path, "r", encoding="utf-8") as f:
                         cached = json.load(f)
-                    if is_valid_tvbox_config(cached):
+                      if is_valid_tvbox_config(cached):
+                        if cached.get("spider"):
+                            cached["spider"] = FORCE_SPIDER
                         subscriptions.append(
+
                             {"name": name, "url": f"{raw_base}/{sid}.json"}
                         )
                         fetched.append((sid, name, cached))
