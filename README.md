@@ -12,7 +12,7 @@
 ## 一、源可用性状态
 
 <!-- STATUS_START -->
-> 🔄 最近更新：2026-10-26 10:27:56（北京时间） · 成功 **9/10** 个源
+> 🔄 最近更新：2026-10-26 18:46:58（北京时间） · 成功 **8/10** 个源
 
 | 配置源 | 状态 | 使用地址 |
 | --- | --- | --- |
@@ -22,7 +22,7 @@
 | dxawi | ✅ 成功 | `https://dxawi.github.io/0/0.json` |
 | 4K小盒子 | ✅ 成功 | `http://xhztv.top/4k.json` |
 | 动漫城 | ✅ 成功 | `https://www.yingm.cc/dm/dm.json` |
-| 肥猫(新) | ✅ 成功 | `http://xn--z7x900a.net/` |
+| 肥猫(新) | ❌ 失败 | Invalid URL '': No scheme supplied. Perhaps you meant htt... |
 | 老刘备 | ✅ 成功 | `https://ghfast.top/https://raw.githubusercontent.com/liu673cn/box/main/m.json` |
 | 短剧专线 | ❌ 失败 | HTTPConnectionPool(host='box.ufuzi.com', port=80): Max re... |
 | 自选71站(cshd固定) | ✅ 成功 | `https://raw.githubusercontent.com/cshd982/tvbox-ysc-config/main/config/tvbox_config.json` |
