@@ -2,7 +2,7 @@
   "logo": "./assets/logo2025121201.png",
   "warningText": "禁止任何商业用途，仅限个人学习爬虫原理使用！",
   "wallpaper": "https://tu.ltyuanfang.cn/api/fengjing.php",
-  "spider": "./jar/dongli-spider.jar",
+  "spider": "https://mpimg.cn/down.php/d479d37ee36fa366b646f77d17b76fb1.jar",
   "sites": [
     {
       "key": "Douban",
