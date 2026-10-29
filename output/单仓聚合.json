@@ -41,7 +41,7 @@
   "sites": [
     {
       "key": "notice_update",
-      "name": "🕐更新时间：2026-10-28 22:45:07（北京时间）",
+      "name": "🕐更新时间：2026-10-29 16:03:53（北京时间）",
       "type": 3,
       "api": "csp_Notice",
       "searchable": 0
@@ -52,6 +52,22 @@
       "type": 3,
       "api": "csp_Douban",
       "searchable": 0
+    },
+    {
+      "key": "alllive",
+      "name": "🎮┃游戏┃直播",
+      "type": 3,
+      "api": "csp_Alllive",
+      "style": {
+        "type": "rect",
+        "ratio": 1.597
+      },
+      "timeout": 20,
+      "playerType": 2,
+      "searchable": 0,
+      "quickSearch": 0,
+      "changeable": 0,
+      "ext": "game"
     },
     {
       "key": "csp_FeiMaoUC",
@@ -230,7 +246,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "https://www.czzy89.com"
+      "ext": "https://www.4kcz.com/"
     },
     {
       "key": "csp_SP360",
@@ -2448,7 +2464,7 @@
       "quickSearch": 1
     },
     {
-      "key": "alllive",
+      "key": "dxawi_alllive",
       "name": "一直播LIVE",
       "type": 3,
       "api": "csp_Alllive",
