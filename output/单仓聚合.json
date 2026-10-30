@@ -41,7 +41,7 @@
   "sites": [
     {
       "key": "notice_update",
-      "name": "🕐更新时间：2026-10-30 16:05:12（北京时间）",
+      "name": "🕐更新时间：2026-10-31 03:00:44（北京时间）",
       "type": 3,
       "api": "csp_Notice",
       "searchable": 0
@@ -1511,7 +1511,7 @@
     },
     {
       "key": "Doubanaaaa",
-      "name": "🐮【更新日期:20261026】🐮",
+      "name": "🐮【更新日期:20261031】🐮",
       "type": 3,
       "api": "csp_NewDouBanGuard",
       "indexs": 1,
@@ -1851,6 +1851,14 @@
       "type": 3,
       "类型": "短剧",
       "api": "csp_DuanJuAiWeiGuanGuard",
+      "searchable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "AnimeAiGongHeGuo",
+      "name": "🤡共和┃动漫🤡",
+      "type": 3,
+      "api": "csp_AnimeAiGongHeGuoGuard",
       "searchable": 1,
       "changeable": 0
     },
@@ -2266,14 +2274,6 @@
       "name": "🎠九七┃综合🎠",
       "type": 3,
       "api": "csp_SoAiPanSooGuard",
-      "searchable": 1,
-      "changeable": 0
-    },
-    {
-      "key": "SoAiQuPanShe",
-      "name": "🎠趣搜┃百度🎠",
-      "type": 3,
-      "api": "csp_SoAiQuPanSheGuard",
       "searchable": 1,
       "changeable": 0
     },
