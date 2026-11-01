@@ -41,7 +41,7 @@
   "sites": [
     {
       "key": "notice_update",
-      "name": "🕐更新时间：2026-11-01 16:43:40（北京时间）",
+      "name": "🕐更新时间：2026-11-02 02:46:17（北京时间）",
       "type": 3,
       "api": "csp_Notice",
       "searchable": 0
@@ -246,7 +246,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "https://www.4kcz.com/"
+      "ext": "https://cz01.vip"
     },
     {
       "key": "csp_SP360",
@@ -1511,7 +1511,7 @@
     },
     {
       "key": "Doubanaaaa",
-      "name": "🐮【更新日期:20261031】🐮",
+      "name": "🐮【更新日期:20261102】🐮",
       "type": 3,
       "api": "csp_NewDouBanGuard",
       "indexs": 1,
@@ -7352,6 +7352,32 @@
       "type": 3,
       "api": "csp_Config",
       "playerType": 2
+    },
+    {
+      "key": "PanMarket",
+      "name": "🐼┃网盘┃应用",
+      "type": 3,
+      "api": "csp_PanMarket",
+      "searchable": 0,
+      "style": {
+        "type": "list"
+      },
+      "ext": {
+        "categories": [
+          {
+            "name": "Fongmi影视",
+            "url": "https://pan.quark.cn/s/7129866d8655"
+          },
+          {
+            "name": "OK影视",
+            "url": "https://pan.quark.cn/s/cc286c991136"
+          },
+          {
+            "name": "Kazumi",
+            "url": "https://pan.quark.cn/s/e77ca870e15e"
+          }
+        ]
+      }
     },
     {
       "key": "米搜",
