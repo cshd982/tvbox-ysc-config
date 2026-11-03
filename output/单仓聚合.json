@@ -176,7 +176,7 @@
   "sites": [
     {
       "key": "notice_update",
-      "name": "🕐更新时间：2026-11-03 06:37:15（北京时间）",
+      "name": "🕐更新时间：2026-11-03 17:02:24（北京时间）",
       "type": 3,
       "api": "csp_Notice",
       "searchable": 0
@@ -1246,7 +1246,7 @@
     },
     {
       "key": "Doubanaaaa",
-      "name": "🐮【更新日期:20261102】🐮",
+      "name": "🐮【更新日期:20261103】🐮",
       "type": 3,
       "api": "csp_NewDouBanGuard",
       "indexs": 1,
@@ -1634,14 +1634,6 @@
       "name": "🎃‍小马┃听书🎃",
       "type": 3,
       "api": "csp_BookHeMaGuard",
-      "searchable": 1,
-      "changeable": 0
-    },
-    {
-      "key": "BookAiShiJie",
-      "name": "🎃‍极品┃听书🎃",
-      "type": 3,
-      "api": "csp_BookAiShiJieGuard",
       "searchable": 1,
       "changeable": 0
     },
