@@ -176,7 +176,7 @@
   "sites": [
     {
       "key": "notice_update",
-      "name": "🕐更新时间：2026-11-06 16:57:30（北京时间）",
+      "name": "🕐更新时间：2026-11-07 04:16:07（北京时间）",
       "type": 3,
       "api": "csp_Notice",
       "searchable": 0
@@ -1246,7 +1246,7 @@
     },
     {
       "key": "Doubanaaaa",
-      "name": "🐮【更新日期:20261104】🐮",
+      "name": "🐮【更新日期:20261106】🐮",
       "type": 3,
       "api": "csp_NewDouBanGuard",
       "indexs": 1,
@@ -1314,6 +1314,15 @@
       "name": "💥贱片┃秒播💥",
       "type": 3,
       "api": "csp_WexAiJianPianGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0
+    },
+    {
+      "key": "下饭",
+      "name": "💥下饭┃秒播💥",
+      "type": 3,
+      "api": "csp_WexAiJuXiaFanGuard",
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 0
@@ -2017,6 +2026,14 @@
       "name": "🎠卡卡┃综合🎠",
       "type": 3,
       "api": "csp_SoKaKaGuard",
+      "searchable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "SoAiQuanPanGuard",
+      "name": "🎠全盘┃综合🎠",
+      "type": 3,
+      "api": "csp_SoAiQuanPanGuard",
       "searchable": 1,
       "changeable": 0
     },
