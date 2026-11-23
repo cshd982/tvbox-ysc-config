@@ -12,11 +12,11 @@
 ## 一、源可用性状态
 
 <!-- STATUS_START -->
-> 🔄 最近更新：2026-11-23 04:36:55（北京时间） · 成功 **7/10** 个源
+> 🔄 最近更新：2026-11-23 18:19:47（北京时间） · 成功 **7/10** 个源
 
 | 配置源 | 状态 | 使用地址 |
 | --- | --- | --- |
-| 肥猫 | ❌ 失败 | 522 Server Error: Connection Timeout with Origin Server f... |
+| 肥猫 | ❌ 失败 | 返回内容不是 TVBox 配置（缺少 sites/spiders/lives 等字段） |
 | 东篱 | ✅ 成功 | `https://gh-proxy.com/https://raw.githubusercontent.com/chitue/dongliTV/main/api.json` |
 | 王二小 | ✅ 成功 | `https://9280.kstore.vip/aiwex.json` |
 | dxawi | ✅ 成功 | `https://dxawi.github.io/0/0.json` |
